@@ -7,7 +7,7 @@ hide:
 <div class="sb-hero">
   <p class="sb-hero__eyebrow">Forge 1.20.1 · cooperative modpack</p>
   <h1 class="sb-hero__title">Realm <span class="sb-amp">Gates</span></h1>
-  <p class="sb-hero__lede">A cozy survival-adventure pack for playing with friends — new worlds, dragons, ships, real-time <strong>voice &amp; chat translation</strong>, and a few mods built just for this server.</p>
+  <p class="sb-hero__lede">Something is devouring the worlds. We slip from realm to realm through the gates — always one step ahead of the <strong>Corruption</strong>, surviving together.</p>
   <div class="sb-hero__cta">
     <a class="md-button md-button--primary" href="getting-started/install/">Get started</a>
     <a class="md-button" href="mods/">Explore the dimensions</a>

@@ -12,6 +12,8 @@ settings, just *what it is and why it matters*.
 
 ## The Corruption
 
+<img src="../assets/hero-portal.webp" alt="A glowing gate standing in a realm consumed by the Corruption" style="width:100%;border-radius:4px;border:1px solid var(--sb-line);box-shadow:var(--sb-shadow);margin:0.3rem 0 1.2rem">
+
 Something is **unmaking the dimensions**. Realms fracture, flicker and go dark at the edges — a
 spreading digital rot that swallows whole worlds. **Realm Gates** is the effort to push back: to
 reach each realm, hold it stable, and reopen it for players.
