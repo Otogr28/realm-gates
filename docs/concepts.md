@@ -21,12 +21,12 @@ settings, just *what it is and why it matters*.
 
   <article class="sb-codex__entry">
     <div class="sb-codex__media">
-      <img src="../assets/hero-portal.webp" alt="A glowing gate standing in a realm consumed by the Corruption" loading="lazy">
+      <img src="../assets/hero-portal.webp" alt="A glowing gate standing in a realm consumed by the Blight" loading="lazy">
     </div>
     <div class="sb-codex__body">
       <div class="sb-codex__head">
         <span class="sb-codex__ico sb-ico-corruption"></span>
-        <h2 class="sb-codex__title">The Corruption</h2>
+        <h2 class="sb-codex__title">The Blight</h2>
         <span class="sb-codex__cat sb-codex__cat--danger">World</span>
       </div>
       <p>In the spaces between worlds, something is <strong>unmaking the dimensions</strong>. It does not burn or
@@ -35,8 +35,8 @@ the world simply stops being. A spreading <strong>digital rot</strong>, and it h
 <strong>Realm Gates</strong> is the answer raised against it: to reach each dying world, hold it steady, and pry
 its door back open.</p>
       <p>So far the rot has been turned back from only one. <strong>Aincrad</strong>, Dimension 1, stands open and whole.
-The rest remain <strong>sealed or corrupted</strong>, waiting in the dark behind their gates — <em>not yet come</em>,
-until someone reaches them and reclaims them from the Corruption.</p>
+The rest remain <strong>sealed or blighted</strong>, waiting in the dark behind their gates — <em>not yet come</em>,
+until someone reaches them and reclaims them from the Blight.</p>
     </div>
   </article>
 
@@ -52,7 +52,7 @@ until someone reaches them and reclaims them from the Corruption.</p>
       </div>
       <p>A <strong>realm</strong> (or dimension) is an entire world of its own — its own land, creatures, weather and
 rules. You begin in <strong>Aincrad</strong> — Dimension 1, a familiar overworld. More realms open over time as they're
-recovered from the Corruption, each with a different feel and its own dangers.</p>
+recovered from the Blight, each with a different feel and its own dangers.</p>
     </div>
   </article>
 

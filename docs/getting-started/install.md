@@ -15,7 +15,7 @@
 </div>
 
 In the meantime, get a head start: read the **[Concepts](../concepts.md)** to learn the realms,
-gates and the Corruption — or browse **[the dimensions](../mods/index.md)** to see what's waiting
+gates and the Blight — or browse **[the dimensions](../mods/index.md)** to see what's waiting
 on the other side.
 
 <!-- ============================================================
