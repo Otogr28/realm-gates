@@ -1,0 +1,17 @@
+# MkDocs build output
+/site/
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Local secrets for deployment (never commit)
+deploy/secrets/
+deploy/*.key
+deploy/*.pem
+
+# Editor / OS
+.DS_Store
+.idea/
+.vscode/

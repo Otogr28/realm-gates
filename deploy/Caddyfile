@@ -1,0 +1,38 @@
+# summerBuddies Wiki — Caddy config (static file server behind Cloudflare)
+# Replace wiki.example.com with your real domain.
+#
+# TLS: use a Cloudflare Origin Certificate (free, 15-year) and set Cloudflare
+#      SSL/TLS mode to "Full (strict)". Mount the cert/key into the container
+#      at /etc/caddy/cf-origin.pem and /etc/caddy/cf-origin.key.
+
+wiki.example.com {
+	# Serve the static site built by mkdocs into /opt/wiki-site (mounted at /srv).
+	root * /srv
+	encode gzip zstd
+	file_server {
+		# no directory listings
+		hide .git
+	}
+
+	# Cloudflare Origin certificate (origin <-> Cloudflare leg).
+	tls /etc/caddy/cf-origin.pem /etc/caddy/cf-origin.key
+
+	# --- Security headers (site is fully static) ---
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		X-Frame-Options "DENY"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		# Material + inline styles/scripts; relax only if you add 3rd-party embeds.
+		Content-Security-Policy "default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; font-src 'self' data:; object-src 'none'; base-uri 'self'; frame-ancestors 'none'"
+		-Server
+	}
+
+	# --- BLOCKED CONTENT: password-protect the /private/ section ---
+	# Generate the hash with:  docker run --rm caddy caddy hash-password --plaintext 'YOURPASS'
+	# Then paste the bcrypt hash below (replace the placeholder).
+	@private path /private /private/*
+	basic_auth @private {
+		admin $2a$14$REPLACE_WITH_BCRYPT_HASH_FROM_caddy_hash_password
+	}
+}

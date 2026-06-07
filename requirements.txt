@@ -1,0 +1,2 @@
+# Build the wiki locally:  pip install -r requirements.txt  &&  mkdocs serve
+mkdocs-material==9.5.49

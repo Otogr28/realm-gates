@@ -1,0 +1,25 @@
+#!/usr/bin/env bash
+# mc-wiki — build & publish the summerBuddies wiki on the VPS.
+# Mirrors the style of mc-update. Run as the user that can use Docker.
+#
+#   1. git pull the wiki repo
+#   2. build the static site with the official mkdocs-material image
+#   3. output to /opt/wiki-site (served by the Caddy stack in /opt/wiki)
+#
+# Install: copy to /usr/local/bin/mc-wiki, chmod +x.
+set -euo pipefail
+
+REPO="${WIKI_REPO:-/opt/summerBuddies-wiki}"   # git checkout of the wiki repo on the VPS
+OUT="${WIKI_OUT:-/opt/wiki-site}"              # built site (mounted into Caddy at /srv)
+
+echo "==> Updating wiki source ($REPO)"
+git -C "$REPO" pull --ff-only
+
+echo "==> Building static site -> $OUT"
+mkdir -p "$OUT"
+docker run --rm \
+	-v "$REPO":/docs:ro \
+	-v "$OUT":/site \
+	squidfunk/mkdocs-material build --strict -d /site
+
+echo "==> Done. Caddy already serves $OUT (no restart needed)."

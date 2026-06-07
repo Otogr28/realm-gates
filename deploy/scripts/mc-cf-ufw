@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+# mc-cf-ufw — allow inbound 443 ONLY from Cloudflare's IP ranges.
+# This is the core anti-attack control: direct-to-origin traffic is dropped,
+# so only Cloudflare (with its DDoS/WAF in front) can reach the wiki.
+#
+# Run on the VPS as root/sudo. Re-run (or cron weekly) to refresh ranges.
+set -euo pipefail
+
+echo "==> Removing any previous Cloudflare 443 rules"
+# (manual cleanup note) inspect with:  ufw status numbered
+# Remove old 'ALLOW ... 443' lines you added before, then re-add fresh below.
+
+echo "==> Fetching Cloudflare IP ranges"
+v4="$(curl -fsS https://www.cloudflare.com/ips-v4)"
+v6="$(curl -fsS https://www.cloudflare.com/ips-v6)"
+
+echo "==> Allowing 443/tcp from Cloudflare only"
+for ip in $v4 $v6; do
+	ufw allow proto tcp from "$ip" to any port 443 comment 'cloudflare-wiki'
+done
+
+echo "==> Done. Verify with: ufw status"
+echo "    Do NOT 'ufw allow 443' to the world — that defeats the purpose."

@@ -1,0 +1,28 @@
+# summerBuddies Wiki — Caddy static host (run on the VPS, e.g. in /opt/wiki/)
+#
+#   docker compose up -d
+#
+# Expects:
+#   ./Caddyfile          this folder's Caddyfile (domain + basic_auth configured)
+#   ./cf-origin.pem      Cloudflare Origin certificate   (chmod 600, NOT committed)
+#   ./cf-origin.key      Cloudflare Origin private key    (chmod 600, NOT committed)
+#   /opt/wiki-site       built static site (produced by ../scripts/mc-wiki)
+
+services:
+  caddy:
+    image: caddy:2-alpine
+    container_name: sb-wiki
+    restart: unless-stopped
+    ports:
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - ./cf-origin.pem:/etc/caddy/cf-origin.pem:ro
+      - ./cf-origin.key:/etc/caddy/cf-origin.key:ro
+      - /opt/wiki-site:/srv:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:
