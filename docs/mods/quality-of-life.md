@@ -80,7 +80,7 @@ more social. You'll use them the entire playthrough.
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/fancymenu" target="_blank" rel="noopener">
     <span class="mod-card__media"><span class="mod-card__tier">UI</span><img src="../../assets/mods/fancymenu-banner.png" alt="FancyMenu" loading="lazy"></span>
-    <span class="mod-card__body"><span class="mod-card__h">FancyMenu</span><span class="mod-card__p">Powers the custom summerBuddies main-menu theme.</span><span class="mod-card__link">Mod page ↗</span></span>
+    <span class="mod-card__body"><span class="mod-card__h">FancyMenu</span><span class="mod-card__p">Powers the custom Realm Gates main-menu theme.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/spawn-animations" target="_blank" rel="noopener">
     <span class="mod-card__media"><span class="mod-card__tier">Cosmetic</span><img src="../../assets/mods/spawn-animations-banner.webp" alt="Spawn Animations" loading="lazy"></span>

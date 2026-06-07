@@ -6,7 +6,7 @@
 </div>
 
 You need **Minecraft: Java Edition** and a launcher with **Forge 1.20.1** installed. Then you add
-the summerBuddies **mods** and **configs** to that Forge instance. Pick whichever method below
+the Realm Gates **mods** and **configs** to that Forge instance. Pick whichever method below
 suits you — they all end with the same result.
 
 !!! info "Before you start"

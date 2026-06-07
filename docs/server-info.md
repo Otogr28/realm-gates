@@ -5,7 +5,7 @@
   </div>
 </div>
 
-Everything you need to know to play nicely on the summerBuddies server.
+Everything you need to know to play nicely on the Realm Gates server.
 
 ## Joining
 

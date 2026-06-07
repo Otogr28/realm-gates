@@ -5,14 +5,14 @@
   </div>
 </div>
 
-A plain-language glossary of the things you'll run into in summerBuddies. No jargon — just "what
+A plain-language glossary of the things you'll run into in Realm Gates. No jargon — just "what
 is this and why do I care?"
 
 ---
 
 ## Forge
 
-The mod loader. summerBuddies runs on **Minecraft Forge 1.20.1**. Your launcher needs a Forge
+The mod loader. Realm Gates runs on **Minecraft Forge 1.20.1**. Your launcher needs a Forge
 1.20.1 instance before any mod will load. See [Install the modpack](getting-started/install.md).
 
 ## Mods, configs, and the modpack

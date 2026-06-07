@@ -1,6 +1,6 @@
 <div class="sb-banner" style="background-image:linear-gradient(125deg,#1a2a6b 0%,#0a1330 55%,#1a0f2e 100%)">
   <div class="sb-banner__inner">
-    <p class="sb-eyebrow">Custom mod · made for summerBuddies</p>
+    <p class="sb-eyebrow">Custom mod · made for this server</p>
     <h1>Realm Gates</h1>
   </div>
 </div>
