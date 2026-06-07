@@ -8,73 +8,235 @@
 The ideas, powers and dangers you'll meet across the realms — in plain language. No menus, no
 settings, just *what it is and why it matters*.
 
----
+<!-- ACT I — THE WORLD -->
+<div class="sb-act">
+  <span class="sb-act__num">I</span>
+  <span class="sb-act__meta">
+    <span class="sb-act__eyebrow">The World</span>
+    <span class="sb-act__title">Where the realms are</span>
+  </span>
+</div>
 
-## The Corruption
+<div class="sb-codex">
 
-<img src="../assets/hero-portal.webp" alt="A glowing gate standing in a realm consumed by the Corruption" style="width:100%;border-radius:4px;border:1px solid var(--sb-line);box-shadow:var(--sb-shadow);margin:0.3rem 0 1.2rem">
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/hero-portal.webp" alt="A glowing gate standing in a realm consumed by the Corruption" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-corruption"></span>
+        <h2 class="sb-codex__title">The Corruption</h2>
+        <span class="sb-codex__cat sb-codex__cat--danger">World</span>
+      </div>
+      <p>Something is <strong>unmaking the dimensions</strong>. Realms fracture, flicker and go dark at the edges — a
+spreading digital rot that swallows whole worlds. <strong>Realm Gates</strong> is the effort to push back: to
+reach each realm, hold it stable, and reopen it for players.</p>
+      <p>That's why only <strong>Aincrad</strong> (Dimension 1) stands fully open today. The others are still <strong>sealed or
+corrupted</strong> — you'll see them listed as <em>coming soon</em> until they're reclaimed.</p>
+    </div>
+  </article>
 
-Something is **unmaking the dimensions**. Realms fracture, flicker and go dark at the edges — a
-spreading digital rot that swallows whole worlds. **Realm Gates** is the effort to push back: to
-reach each realm, hold it stable, and reopen it for players.
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/aincrad-banner.webp" alt="Aincrad — the first open realm" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-dimensions"></span>
+        <h2 class="sb-codex__title">Realms &amp; dimensions</h2>
+        <span class="sb-codex__cat sb-codex__cat--world">World</span>
+      </div>
+      <p>A <strong>realm</strong> (or dimension) is an entire world of its own — its own land, creatures, weather and
+rules. You begin in <strong>Aincrad</strong> — Dimension 1, a familiar overworld. More realms open over time as they're
+recovered from the Corruption, each with a different feel and its own dangers.</p>
+    </div>
+  </article>
 
-That's why only **Aincrad** (Dimension 1) stands fully open today. The others are still **sealed or
-corrupted** — you'll see them listed as *coming soon* until they're reclaimed.
+  <article class="sb-codex__entry sb-codex__entry--noart">
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-gates"></span>
+        <h2 class="sb-codex__title">Realm Gates</h2>
+        <span class="sb-codex__cat sb-codex__cat--world">World</span>
+      </div>
+      <p>The <strong>gates</strong> are how you cross between realms — and the law that decides <em>where</em> you can go and
+<em>when</em>. A realm stays closed until you've earned the way in: clearing a challenge, finding a key,
+or proving you're ready. Some paths only run one way, so choose your crossings well.</p>
+    </div>
+  </article>
 
-## Realms & dimensions
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/waystones.webp" alt="A waystone you can activate for fast travel" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-waystone"></span>
+        <h2 class="sb-codex__title">Waystones — fast travel</h2>
+        <span class="sb-codex__cat sb-codex__cat--world">World</span>
+      </div>
+      <p>Stones scattered through the world that you <strong>activate</strong> by touching them. Once awakened, you can
+<strong>teleport between any you've found</strong> — a personal web of shortcuts so the huge realms never feel
+like a slog.</p>
+    </div>
+  </article>
 
-A **realm** (or dimension) is an entire world of its own — its own land, creatures, weather and
-rules. You begin in **Aincrad** — Dimension 1, a familiar overworld. More realms open over time as they're
-recovered from the Corruption, each with a different feel and its own dangers.
+</div>
 
-## Realm Gates
+<!-- ACT II — YOUR POWER -->
+<div class="sb-act">
+  <span class="sb-act__num">II</span>
+  <span class="sb-act__meta">
+    <span class="sb-act__eyebrow">Your Power</span>
+    <span class="sb-act__title">What you can wield</span>
+  </span>
+</div>
 
-The **gates** are how you cross between realms — and the law that decides *where* you can go and
-*when*. A realm stays closed until you've earned the way in: clearing a challenge, finding a key,
-or proving you're ready. Some paths only run one way, so choose your crossings well.
+<div class="sb-codex">
 
-## Waystones — fast travel
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/epic-fight-banner.webp" alt="A companion fighting at your side" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-companion"></span>
+        <h2 class="sb-codex__title">Companions</h2>
+        <span class="sb-codex__cat sb-codex__cat--power">Power</span>
+      </div>
+      <p>A <strong>personal ally</strong> that fights at your side. You choose its <strong>class</strong> — and it
+<strong>grows with you</strong>: it levels from kills, learns abilities you piece together, and can even fetch
+items for you.</p>
+      <div class="sb-class-grid">
+        <div class="sb-class">
+          <span class="sb-class__glyph">⚔️</span>
+          <span class="sb-class__name">Warrior</span>
+          <span class="sb-class__role">Frontline tank</span>
+        </div>
+        <div class="sb-class">
+          <span class="sb-class__glyph">🏹</span>
+          <span class="sb-class__name">Range</span>
+          <span class="sb-class__role">Marksman</span>
+        </div>
+        <div class="sb-class">
+          <span class="sb-class__glyph">💀</span>
+          <span class="sb-class__name">Summoner</span>
+          <span class="sb-class__role">Calls minions</span>
+        </div>
+        <div class="sb-class">
+          <span class="sb-class__glyph">✨</span>
+          <span class="sb-class__name">Mage</span>
+          <span class="sb-class__role">Spells &amp; healing</span>
+        </div>
+      </div>
+    </div>
+  </article>
 
-Stones scattered through the world that you **activate** by touching them. Once awakened, you can
-**teleport between any you've found** — a personal web of shortcuts so the huge realms never feel
-like a slog.
+  <article class="sb-codex__entry sb-codex__entry--noart">
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-pictos"></span>
+        <h2 class="sb-codex__title">Pictos &amp; Luminas</h2>
+        <span class="sb-codex__cat sb-codex__cat--power">Power</span>
+      </div>
+      <p>Your companion's <strong>build layer</strong>. <strong>Pictos</strong> are equippable pieces that grant stats plus a special
+passive. Keep one equipped long enough and your companion <strong>learns</strong> its essence as a <strong>Lumina</strong> —
+a passive you can keep <em>without</em> taking up a Picto slot. Mix and match to shape a fighter that's
+truly yours.</p>
+    </div>
+  </article>
 
-## Companions
-
-A **personal ally** that fights at your side. You choose its **class** — *warrior* (frontline
-tank), *range* (marksman), *summoner* (calls minions) or *mage* (spells &amp; healing) — and it
-**grows with you**: it levels from kills, learns abilities you piece together, and can even fetch
-items for you.
-
-## Pictos &amp; Luminas
-
-Your companion's **build layer**. **Pictos** are equippable pieces that grant stats plus a special
-passive. Keep one equipped long enough and your companion **learns** its essence as a **Lumina** —
-a passive you can keep *without* taking up a Picto slot. Mix and match to shape a fighter that's
-truly yours.
-
-## Magic
-
-Hand-crafted spellcasting. Instead of fixed spells, you **build your own** from **glyphs** —
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/ars-nouveau.webp" alt="Hand-crafted spellcasting" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-magic"></span>
+        <h2 class="sb-codex__title">Magic</h2>
+        <span class="sb-codex__cat sb-codex__cat--power">Power</span>
+      </div>
+      <p>Hand-crafted spellcasting. Instead of fixed spells, you <strong>build your own</strong> from <strong>glyphs</strong> —
 choosing the shape, the effect and the twist — then cast your creation. Your spellbook is whatever
-you imagine.
+you imagine.</p>
+    </div>
+  </article>
 
-## Trinkets &amp; charms
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/curios.png" alt="Charms, rings, belts and amulets" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-trinkets"></span>
+        <h2 class="sb-codex__title">Trinkets &amp; charms</h2>
+        <span class="sb-codex__cat sb-codex__cat--power">Power</span>
+      </div>
+      <p>Not everything powerful is armor or a sword. <strong>Charms, rings, belts and amulets</strong> go in their own
+dedicated slots, stacking bonuses and abilities on top of your normal gear.</p>
+    </div>
+  </article>
 
-Not everything powerful is armor or a sword. **Charms, rings, belts and amulets** go in their own
-dedicated slots, stacking bonuses and abilities on top of your normal gear.
+</div>
 
-## Dragons &amp; beasts
+<!-- ACT III — THE THREATS -->
+<div class="sb-act">
+  <span class="sb-act__num">III</span>
+  <span class="sb-act__meta">
+    <span class="sb-act__eyebrow">The Threats</span>
+    <span class="sb-act__title">What stands in your way</span>
+  </span>
+</div>
 
-The realms are guarded by **apex monsters** — fire, ice and lightning **dragons** you can raise
-from an egg and one day **ride**, plus mythical beasts hoarding the best loot. The strongest gear
-in the game is forged from what you take off them.
+<div class="sb-codex">
 
-## Speaking across languages
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/ice-and-fire-banner.webp" alt="Apex dragons and mythical beasts" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-dragon"></span>
+        <h2 class="sb-codex__title">Dragons &amp; beasts</h2>
+        <span class="sb-codex__cat sb-codex__cat--danger">Danger</span>
+      </div>
+      <p>The realms are guarded by <strong>apex monsters</strong> — fire, ice and lightning <strong>dragons</strong> you can raise
+from an egg and one day <strong>ride</strong>, plus mythical beasts hoarding the best loot. The strongest gear
+in the game is forged from what you take off them.</p>
+    </div>
+  </article>
 
-Friends who speak different languages can still adventure together. **Voice Translate** shows
-**floating subtitles above a speaker's head**, translated into *your* language in real time — and
-it translates text chat too. Just talk; everyone understands.
+</div>
+
+<!-- ACT IV — TOGETHER -->
+<div class="sb-act">
+  <span class="sb-act__num">IV</span>
+  <span class="sb-act__meta">
+    <span class="sb-act__eyebrow">Together</span>
+    <span class="sb-act__title">No one adventures alone</span>
+  </span>
+</div>
+
+<div class="sb-codex">
+
+  <article class="sb-codex__entry">
+    <div class="sb-codex__media">
+      <img src="../assets/mods/simple-voice-chat-banner.webp" alt="Real-time voice and chat translation" loading="lazy">
+    </div>
+    <div class="sb-codex__body">
+      <div class="sb-codex__head">
+        <span class="sb-codex__ico sb-ico-translate"></span>
+        <h2 class="sb-codex__title">Speaking across languages</h2>
+        <span class="sb-codex__cat sb-codex__cat--social">Social</span>
+      </div>
+      <p>Friends who speak different languages can still adventure together. <strong>Voice Translate</strong> shows
+<strong>floating subtitles above a speaker's head</strong>, translated into <em>your</em> language in real time — and
+it translates text chat too. Just talk; everyone understands.</p>
+    </div>
+  </article>
+
+</div>
 
 ---
 
