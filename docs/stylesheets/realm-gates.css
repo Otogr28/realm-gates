@@ -405,33 +405,6 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
  * ---------------------------------------------------------- */
 [data-md-color-scheme="summerbuddies"] .md-header { z-index: 10; }
 
-@keyframes sb-corrupt {
-  0%   { opacity: .72; transform: translate(0, 0); }
-  12%  { opacity: .5;  transform: translate(-2px, 3px); }
-  13%  { opacity: .9; }
-  30%  { opacity: .62; transform: translate(2px, -2px); }
-  48%  { opacity: .82; transform: translate(-3px, 1px); }
-  49%  { opacity: .4; }
-  66%  { opacity: .85; transform: translate(1px, -3px); }
-  84%  { opacity: .58; transform: translate(-1px, 2px); }
-  100% { opacity: .72; transform: translate(0, 0); }
-}
-
-/* Two dedicated edge strips on the <html> element (more reliable than one
-   masked overlay). Bright glitch blocks creeping in from both sides. */
-[data-md-color-scheme="summerbuddies"] html::before,
-[data-md-color-scheme="summerbuddies"] html::after {
-  content: ""; position: fixed; top: 0; bottom: 0; width: 110px; z-index: 5;
-  pointer-events: none;
-  background-image:
-    repeating-linear-gradient(0deg, rgba(6,12,29,0.9) 0 5px, transparent 5px 9px),
-    repeating-linear-gradient(90deg, rgba(232,40,120,0.8) 0 4px, transparent 4px 8px, rgba(48,200,232,0.66) 8px 11px, transparent 11px 18px);
-  opacity: 0.9;
-  animation: sb-corrupt 2.2s steps(9, jump-none) infinite;
-}
-[data-md-color-scheme="summerbuddies"] html::before { left: 0; }
-[data-md-color-scheme="summerbuddies"] html::after { right: 0; }
-
 /* Concepts banner pulses with an unstable magenta/cyan glow */
 @keyframes sb-banner-flicker {
   0%, 100% { box-shadow: var(--sb-shadow); }
@@ -510,3 +483,57 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
 .sb-ico-custom { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M12%203l1.8%205.5L19%2010l-5.2%201.6L12%2017l-1.8-5.4L5%2010l5.2-1.5z%27%2F%3E%3C%2Fsvg%3E"); }
 
 .mod-card__media.is-lock { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.7%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%275%27%20y%3D%2711%27%20width%3D%2714%27%20height%3D%279%27%20rx%3D%272%27%2F%3E%3Cpath%20d%3D%27M8%2011V8a4%204%200%200%201%208%200v3%27%2F%3E%3C%2Fsvg%3E"); background-repeat:no-repeat; background-position:center; background-size:46px; }
+
+/* ============================================================
+   14. MOD DETAIL PAGE — clickable hero (the image opens the
+       official mod page; the rest of the page is the friendly,
+       in-wiki write-up). Added 2026-06-07.
+   ============================================================ */
+.mod-hero {
+  position: relative; display: flex; align-items: flex-end;
+  height: clamp(210px, 30vw, 300px); margin: 0 0 .4rem; border-radius: 4px; overflow: hidden;
+  border: 1px solid var(--sb-line); box-shadow: var(--sb-shadow);
+  background-color: var(--sb-navy-800);
+  text-decoration: none; cursor: pointer;
+  transition: transform .28s cubic-bezier(.2,.7,.2,1), border-color .28s ease, box-shadow .28s ease;
+}
+.mod-hero:hover { border-color: var(--sb-gold); box-shadow: var(--sb-shadow-hover); transform: translateY(-3px); }
+.mod-hero::before { content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(6,12,29,.25) 18%, rgba(6,12,29,.93)); }
+.mod-hero__inner { position: relative; z-index: 2; padding: 1.4rem 1.6rem; width: 100%; }
+.mod-hero__inner .sb-eyebrow { margin: 0 0 .2rem; }
+.mod-hero__inner h1 { margin: 0; border: none; color: #fff; }
+.mod-hero__cta {
+  display: inline-flex; align-items: center; gap: .35rem; margin-top: .7rem;
+  font-family: var(--sb-font-pixel); font-size: .8rem; font-weight: 600; letter-spacing: .03em;
+  color: var(--sb-navy-950); background: var(--sb-gold);
+  padding: .3em .8em; border-radius: 3px;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.25), inset -2px -2px 0 rgba(0,0,0,.25);
+  transition: transform .2s ease;
+}
+.mod-hero:hover .mod-hero__cta { transform: translateX(3px); }
+/* icon / plain variants: centre a square logo (or glyph) on a navy field */
+.mod-hero--icon, .mod-hero--plain {
+  background-image: radial-gradient(circle at 50% 38%, var(--sb-navy-600), var(--sb-navy-900));
+}
+.mod-hero__art { position: absolute; inset: 0; z-index: 1; }
+/* banner pages: the artwork fills the hero and is cropped (never tiled) */
+.mod-hero__art > img { width: 100%; height: 100%; object-fit: cover; display: block; }
+/* icon / plain pages: centre a small square logo (or glyph) on a navy field */
+.mod-hero--icon .mod-hero__art, .mod-hero--plain .mod-hero__art {
+  display: flex; align-items: center; justify-content: center; padding-bottom: 3.2rem; }
+.mod-hero--icon .mod-hero__art > img {
+  width: 124px; height: 124px; object-fit: contain; border-radius: 16px;
+  image-rendering: pixelated; box-shadow: 0 14px 30px -12px rgba(0,0,0,.85); }
+.mod-hero--plain .mod-hero__art { font-size: 3.6rem; color: var(--sb-gold); opacity: .55; }
+/* little hint line under the hero */
+.mod-hero-note { font-size: .78rem; color: var(--sb-ink-dim); margin: .25rem 0 1.5rem; }
+.mod-hero-note::before { content: "↑ "; color: var(--sb-gold); }
+/* friendly "where you'll meet them" creature tables read better a touch tighter */
+.md-typeset .mod-creatures td:first-child { font-weight: 600; color: var(--sb-ink); }
+
+/* inline legend dots (used in the catalogue intro to explain the tier pills) */
+.sb-tier-dot { display: inline-block; width: .7em; height: .7em; border-radius: 2px;
+  margin: 0 .15em -.02em 0; vertical-align: middle; }
+.sb-tier-dot--aincrad { background: var(--sb-gold); }
+.sb-tier-dot--all { background: rgba(8,17,39,.78); border: 1px solid var(--sb-gold); }
