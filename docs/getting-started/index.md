@@ -14,17 +14,17 @@ Three quick steps and you're through the gate. Pick a card below.
 
 <div class="sb-cards">
   <a class="sb-card" href="install/">
-    <span class="sb-card__icon">⬇️</span>
+    <span class="sb-card__icon sb-ico-install"></span>
     <h3>1 · Install</h3>
     <span>Get Forge 1.20.1 and the modpack into your launcher — one script, a ZIP, or Git.</span>
   </a>
   <a class="sb-card" href="voice-and-chat/">
-    <span class="sb-card__icon">🎙️</span>
+    <span class="sb-card__icon sb-ico-voice"></span>
     <h3>2 · Voice &amp; translation</h3>
     <span>Set your microphone and your language for the real-time subtitle translator.</span>
   </a>
   <a class="sb-card" href="updating/">
-    <span class="sb-card__icon">🔄</span>
+    <span class="sb-card__icon sb-ico-update"></span>
     <h3>3 · Updating</h3>
     <span>Keep in sync with the server, and see what's kept vs. reset.</span>
   </a>
@@ -40,17 +40,17 @@ Three quick steps and you're through the gate. Pick a card below.
 
 <div class="sb-cards">
   <a class="sb-card" href="../mods/">
-    <span class="sb-card__icon">🌀</span>
+    <span class="sb-card__icon sb-ico-dimensions"></span>
     <h3>The dimensions</h3>
     <span>Every mod, grouped by the realm it belongs to.</span>
   </a>
   <a class="sb-card" href="../custom/voice-translate/">
-    <span class="sb-card__icon">🗣️</span>
+    <span class="sb-card__icon sb-ico-custom"></span>
     <h3>Custom features</h3>
     <span>Realm Gates, Companions and Voice Translate — built for this server.</span>
   </a>
   <a class="sb-card" href="../server-info/">
-    <span class="sb-card__icon">🛡️</span>
+    <span class="sb-card__icon sb-ico-server"></span>
     <h3>Server info</h3>
     <span>Rules, whitelist and how to be a good guest.</span>
   </a>

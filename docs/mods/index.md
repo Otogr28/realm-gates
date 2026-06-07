@@ -27,11 +27,11 @@ universal mods (UI, performance, combat, social) that follow you everywhere.
     <span class="mod-card__body"><span class="mod-card__h">Dimension 1 — Aincrad</span><span class="mod-card__p">Your home realm: a familiar overworld where all of the pack's current content lives.</span><span class="mod-card__link">Open ↗</span></span>
   </a>
   <span class="mod-card is-soon">
-    <span class="mod-card__media is-empty">🔒</span>
+    <span class="mod-card__media is-empty is-lock"></span>
     <span class="mod-card__body"><span class="mod-card__tier mod-card__tier--soon" style="position:static;align-self:flex-start;margin-bottom:.3rem;">Coming soon</span><span class="mod-card__h">Dimension 2</span><span class="mod-card__p">A new realm is on the way — its own world, creatures and rules.</span></span>
   </span>
   <span class="mod-card is-soon">
-    <span class="mod-card__media is-empty">🔒</span>
+    <span class="mod-card__media is-empty is-lock"></span>
     <span class="mod-card__body"><span class="mod-card__tier mod-card__tier--soon" style="position:static;align-self:flex-start;margin-bottom:.3rem;">Coming soon</span><span class="mod-card__h">Dimension 3</span><span class="mod-card__p">Another realm planned further down the road. Unlocked through Realm Gates.</span></span>
   </span>
 </div>
@@ -39,9 +39,9 @@ universal mods (UI, performance, combat, social) that follow you everywhere.
 <p class="sb-eyebrow">Made for this server</p>
 
 <div class="sb-cards">
-  <a class="sb-card" href="../custom/realmgates/"><span class="sb-card__icon">🌀</span><h3>Realm Gates</h3><span>The system that controls dimension travel and unlocks new realms.</span></a>
-  <a class="sb-card" href="../custom/custom-companions/"><span class="sb-card__icon">🐾</span><h3>Custom Companions</h3><span>Buildable companions that fight with you.</span></a>
-  <a class="sb-card" href="../custom/voice-translate/"><span class="sb-card__icon">🗣️</span><h3>Voice Translate</h3><span>Real-time voice &amp; chat translation.</span></a>
+  <a class="sb-card" href="../custom/realmgates/"><span class="sb-card__icon sb-ico-gates"></span><h3>Realm Gates</h3><span>The system that controls dimension travel and unlocks new realms.</span></a>
+  <a class="sb-card" href="../custom/custom-companions/"><span class="sb-card__icon sb-ico-companion"></span><h3>Custom Companions</h3><span>Buildable companions that fight with you.</span></a>
+  <a class="sb-card" href="../custom/voice-translate/"><span class="sb-card__icon sb-ico-translate"></span><h3>Voice Translate</h3><span>Real-time voice &amp; chat translation.</span></a>
 </div>
 
 !!! info "What about the libraries?"

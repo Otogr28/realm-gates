@@ -283,7 +283,12 @@
   transition: transform .25s cubic-bezier(.2,.7,.2,1), border-color .25s ease, box-shadow .25s ease;
 }
 .sb-card:hover { transform: translateY(-4px); border-color: var(--sb-line); box-shadow: var(--sb-shadow-hover); }
-.sb-card .sb-card__icon { font-size: 1.6rem; }
+.sb-card .sb-card__icon {
+  display: block; width: 34px; height: 34px; margin-bottom: 0.1rem;
+  background-repeat: no-repeat; background-position: left center; background-size: contain;
+  transition: transform .25s cubic-bezier(.2,.7,.2,1);
+}
+.sb-card:hover .sb-card__icon { transform: translateY(-2px) scale(1.06); }
 .sb-card h3 { margin: 0; color: #fff; font-family: "Fraunces", serif; }
 a.sb-card { text-decoration: none; }
 a.sb-card h3 { transition: color .2s ease; }
@@ -412,21 +417,20 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
   100% { opacity: .72; transform: translate(0, 0); }
 }
 
-[data-md-color-scheme="summerbuddies"] body::after {
-  content: ""; position: fixed; inset: 0; z-index: 6; pointer-events: none;
-  /* Two glitch strips painted directly at the left & right edges — no mask
-     (mask-image was unreliable). Each strip = data bars chopped into pixel blocks. */
-  background-repeat: no-repeat;
-  background-position: left center, left center, right center, right center;
-  background-size: 130px 100%, 130px 100%, 130px 100%, 130px 100%;
+/* Two dedicated edge strips on the <html> element (more reliable than one
+   masked overlay). Bright glitch blocks creeping in from both sides. */
+[data-md-color-scheme="summerbuddies"] html::before,
+[data-md-color-scheme="summerbuddies"] html::after {
+  content: ""; position: fixed; top: 0; bottom: 0; width: 110px; z-index: 5;
+  pointer-events: none;
   background-image:
-    repeating-linear-gradient(0deg, rgba(6,12,29,0.92) 0 6px, transparent 6px 10px),
-    repeating-linear-gradient(90deg, rgba(232,40,110,0.68) 0 4px, transparent 4px 9px, rgba(48,200,232,0.58) 9px 12px, transparent 12px 20px),
-    repeating-linear-gradient(0deg, rgba(6,12,29,0.92) 0 6px, transparent 6px 10px),
-    repeating-linear-gradient(90deg, rgba(232,40,110,0.68) 0 4px, transparent 4px 9px, rgba(48,200,232,0.58) 9px 12px, transparent 12px 20px);
-  opacity: 0.85;
-  animation: sb-corrupt 2.4s steps(9, jump-none) infinite;
+    repeating-linear-gradient(0deg, rgba(6,12,29,0.9) 0 5px, transparent 5px 9px),
+    repeating-linear-gradient(90deg, rgba(232,40,120,0.8) 0 4px, transparent 4px 8px, rgba(48,200,232,0.66) 8px 11px, transparent 11px 18px);
+  opacity: 0.9;
+  animation: sb-corrupt 2.2s steps(9, jump-none) infinite;
 }
+[data-md-color-scheme="summerbuddies"] html::before { left: 0; }
+[data-md-color-scheme="summerbuddies"] html::after { right: 0; }
 
 /* Concepts banner pulses with an unstable magenta/cyan glow */
 @keyframes sb-banner-flicker {
@@ -492,3 +496,17 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
 
 /* Crisp, crunchy rendering for the small mod logos */
 .mod-card__media.is-icon img { image-rendering: pixelated; }
+
+/* ---- Card icons (gold line-art, replaces generic emoji) ---- */
+.sb-ico-install { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M12%203v11%27%2F%3E%3Cpath%20d%3D%27M7%2010l5%205%205-5%27%2F%3E%3Cpath%20d%3D%27M5%2020h14%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-voice { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%279%27%20y%3D%273%27%20width%3D%276%27%20height%3D%2711%27%20rx%3D%273%27%2F%3E%3Cpath%20d%3D%27M5%2011a7%207%200%200%200%2014%200%27%2F%3E%3Cpath%20d%3D%27M12%2018v3%27%2F%3E%3Cpath%20d%3D%27M8%2021h8%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-concepts { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M4%2019V5a2%202%200%200%201%202-2h13v14H6a2%202%200%200%200-2%202z%27%2F%3E%3Cpath%20d%3D%27M4%2019a2%202%200%200%200%202%202h13%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-dimensions { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%2712%27%20rx%3D%275.5%27%20ry%3D%279%27%2F%3E%3Cellipse%20cx%3D%2712%27%20cy%3D%2712%27%20rx%3D%272%27%20ry%3D%274%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-translate { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M21%2011.5a8.5%208.5%200%200%201-12.3%207.6L3%2021l1.9-5.7A8.5%208.5%200%201%201%2021%2011.5z%27%2F%3E%3Ccircle%20cx%3D%278.5%27%20cy%3D%2711.5%27%20r%3D%27.8%27%20fill%3D%27%23e8c45a%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2711.5%27%20r%3D%27.8%27%20fill%3D%27%23e8c45a%27%20stroke%3D%27none%27%2F%3E%3Ccircle%20cx%3D%2715.5%27%20cy%3D%2711.5%27%20r%3D%27.8%27%20fill%3D%27%23e8c45a%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-gates { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M5%2021V8a7%207%200%200%201%2014%200v13%27%2F%3E%3Cpath%20d%3D%27M4%2021h16%27%2F%3E%3Cpath%20d%3D%27M9%2021v-9a3%203%200%200%201%206%200v9%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-companion { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%279%27%20cy%3D%278%27%20r%3D%273%27%2F%3E%3Cpath%20d%3D%27M3.5%2020a5.5%205.5%200%200%201%2011%200%27%2F%3E%3Ccircle%20cx%3D%2717%27%20cy%3D%279.5%27%20r%3D%272.2%27%2F%3E%3Cpath%20d%3D%27M14.5%2020a4.5%204.5%200%200%201%207-3.8%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-update { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M20%2011a8%208%200%201%200-2.3%205.6%27%2F%3E%3Cpath%20d%3D%27M20%204v6h-6%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-server { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M12%203l8%203v5.5c0%204.8-3.4%207.7-8%208.8-4.6-1.1-8-4-8-8.8V6z%27%2F%3E%3C%2Fsvg%3E"); }
+.sb-ico-custom { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M12%203l1.8%205.5L19%2010l-5.2%201.6L12%2017l-1.8-5.4L5%2010l5.2-1.5z%27%2F%3E%3C%2Fsvg%3E"); }
+
+.mod-card__media.is-lock { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.7%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%275%27%20y%3D%2711%27%20width%3D%2714%27%20height%3D%279%27%20rx%3D%272%27%2F%3E%3Cpath%20d%3D%27M8%2011V8a4%204%200%200%201%208%200v3%27%2F%3E%3C%2Fsvg%3E"); background-repeat:no-repeat; background-position:center; background-size:46px; }

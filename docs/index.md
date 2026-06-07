@@ -18,22 +18,22 @@ hide:
 
 <div class="sb-cards">
   <a class="sb-card" href="getting-started/install/">
-    <span class="sb-card__icon">⬇️</span>
+    <span class="sb-card__icon sb-ico-install"></span>
     <h3>Install</h3>
     <span>Get the modpack into your launcher in a few minutes.</span>
   </a>
   <a class="sb-card" href="getting-started/voice-and-chat/">
-    <span class="sb-card__icon">🎙️</span>
+    <span class="sb-card__icon sb-ico-voice"></span>
     <h3>Voice &amp; translation</h3>
     <span>Set your language and mic for the QSMP-style translator.</span>
   </a>
   <a class="sb-card" href="concepts/">
-    <span class="sb-card__icon">📖</span>
+    <span class="sb-card__icon sb-ico-concepts"></span>
     <h3>Concepts</h3>
     <span>Plain-language answers to "wait, what is this?"</span>
   </a>
   <a class="sb-card" href="mods/">
-    <span class="sb-card__icon">🧩</span>
+    <span class="sb-card__icon sb-ico-dimensions"></span>
     <h3>Dimensions</h3>
     <span>The realms you travel between — and every mod inside them.</span>
   </a>
@@ -44,17 +44,17 @@ hide:
 
 <div class="sb-cards">
   <a class="sb-card" href="custom/voice-translate/">
-    <span class="sb-card__icon">🗣️</span>
+    <span class="sb-card__icon sb-ico-translate"></span>
     <h3>Voice Translate</h3>
     <span>Floating subtitles above a speaker's head, translated into <em>your</em> language. Text chat too. No API key needed.</span>
   </a>
   <a class="sb-card" href="custom/realmgates/">
-    <span class="sb-card__icon">🌀</span>
+    <span class="sb-card__icon sb-ico-gates"></span>
     <h3>Realm Gates</h3>
     <span>A custom system that controls travel between dimensions and unlocks them as you progress.</span>
   </a>
   <a class="sb-card" href="custom/custom-companions/">
-    <span class="sb-card__icon">🐾</span>
+    <span class="sb-card__icon sb-ico-companion"></span>
     <h3>Custom Companions</h3>
     <span>Build a personal companion that fights with you, levels up, and grows into your own build.</span>
   </a>

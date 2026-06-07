@@ -37,7 +37,7 @@ theme:
     - content.code.copy
 
 extra_css:
-  - stylesheets/extra.css
+  - stylesheets/realm-gates.css
 
 markdown_extensions:
   - admonition
