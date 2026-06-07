@@ -41,6 +41,10 @@ The server is **whitelisted** — only approved players can join. To get on:
   things get laggy, thin out heavy entities.
 - **Voice etiquette.** Use push-to-talk, and remember voice is **proximity-based** — move closer to
   be heard, or use a group channel.
+- **Save on translation.** Translation runs through a paid backend, so help keep it cheap: group up
+  in voice channels with people who **share your language**, so there's nothing to translate. And if
+  you're confident in your bilingual skills, just **all speak the same language** and skip
+  translation entirely. Voice Translate only kicks in when someone nearby uses a different language.
 
 ## Travel & dimensions
 
