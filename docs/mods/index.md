@@ -11,7 +11,7 @@ hide:
 </div>
 
 Realm Gates is built around **dimensions** — separate realms you travel between as you progress.
-You start in **Dimension 1**, and more realms open up over time (the
+You start in **Aincrad** (Dimension 1), and more realms open up over time (the
 **[Realm Gates](../custom/realmgates.md)** mod controls when each one unlocks).
 
 Each mod is tagged by where it lives: a specific **Dimension**, or **All dimensions** for the
@@ -23,8 +23,8 @@ universal mods (UI, performance, combat, social) that follow you everywhere.
     <span class="mod-card__body"><span class="mod-card__h">All dimensions</span><span class="mod-card__p">The universal mods — UI, performance, combat, travel, magic — that follow you into every realm.</span><span class="mod-card__link">Open ↗</span></span>
   </a>
   <a class="mod-card" href="dimension-1/">
-    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="../assets/mods/biomes-weve-gone-banner.webp" alt="Dimension 1" loading="lazy"></span>
-    <span class="mod-card__body"><span class="mod-card__h">Dimension 1 — The Overworld</span><span class="mod-card__p">Your home realm: a familiar overworld where all of the pack's current content lives.</span><span class="mod-card__link">Open ↗</span></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="../assets/mods/biomes-weve-gone-banner.webp" alt="Dimension 1" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Dimension 1 — Aincrad</span><span class="mod-card__p">Your home realm: a familiar overworld where all of the pack's current content lives.</span><span class="mod-card__link">Open ↗</span></span>
   </a>
   <span class="mod-card is-soon">
     <span class="mod-card__media is-empty">🔒</span>

@@ -65,19 +65,19 @@ hide:
 
 <div class="mod-grid">
   <a class="mod-card" href="https://modrinth.com/mod/ice-and-fire-dragons" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/ice-and-fire-banner.webp" alt="Ice and Fire" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="assets/mods/ice-and-fire-banner.webp" alt="Ice and Fire" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Ice &amp; Fire</span><span class="mod-card__p">Tame dragons and fight mythical beasts for the strongest gear in the pack.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/alexs-caves" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/alexs-caves-banner.webp" alt="Alex's Caves" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="assets/mods/alexs-caves-banner.webp" alt="Alex's Caves" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Alex's Caves</span><span class="mod-card__p">Six exotic underground worlds, each its own ecosystem.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/oh-the-biomes-weve-gone" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">50+ new biomes</span><span class="mod-card__p">A world full of new forests, wood, crops and scenery.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/smallships" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/small-ships-banner.jpeg" alt="Small Ships" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="assets/mods/small-ships-banner.jpeg" alt="Small Ships" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Small Ships</span><span class="mod-card__p">Sail real navigable boats and ships across the sea.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
 </div>

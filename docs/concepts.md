@@ -18,13 +18,13 @@ Something is **unmaking the dimensions**. Realms fracture, flicker and go dark a
 spreading digital rot that swallows whole worlds. **Realm Gates** is the effort to push back: to
 reach each realm, hold it stable, and reopen it for players.
 
-That's why only **Dimension 1** stands fully open today. The others are still **sealed or
+That's why only **Aincrad** (Dimension 1) stands fully open today. The others are still **sealed or
 corrupted** — you'll see them listed as *coming soon* until they're reclaimed.
 
 ## Realms & dimensions
 
 A **realm** (or dimension) is an entire world of its own — its own land, creatures, weather and
-rules. You begin in **Dimension 1**, a familiar overworld. More realms open over time as they're
+rules. You begin in **Aincrad** — Dimension 1, a familiar overworld. More realms open over time as they're
 recovered from the Corruption, each with a different feel and its own dangers.
 
 ## Realm Gates
