@@ -77,12 +77,11 @@ nav:
       - Voice & chat translation: getting-started/voice-and-chat.md
       - Updating: getting-started/updating.md
   - Concepts explained: concepts.md
-  - The mods:
-      - How the mod list works: mods/index.md
-      - Quality of life: mods/quality-of-life.md
-      - Early game: mods/early-game.md
-      - Mid game: mods/mid-game.md
-      - Endgame: mods/endgame.md
+  - Dimensions:
+      - Overview: mods/index.md
+      - Dimension 1 — Overworld: mods/dimension-1.md
+      - Dimension 2 (soon): mods/dimension-2.md
+      - Dimension 3 (soon): mods/dimension-3.md
   - Custom features:
       - Realm Gates: custom/realmgates.md
       - Custom Companions: custom/custom-companions.md

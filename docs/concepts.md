@@ -50,7 +50,7 @@ your **exact** in-game name. See [Server info](server-info.md).
 
 Stone blocks you **activate** by clicking them. Once activated, a waystone joins your travel list
 so you can teleport between any waystones you've discovered. They spawn in villages and out in the
-world, which makes the huge modded map manageable. *(Mod: [Waystones](mods/early-game.md).)*
+world, which makes the huge modded map manageable. *(Mod: [Waystones](mods/dimension-1.md).)*
 
 ### Curios (extra equipment slots)
 
@@ -62,18 +62,18 @@ system many mods plug into.
 
 Look at a block or creature and a small panel appears showing **what it is**, its health, the tool
 needed to mine it, and more. Great for learning a modded world quickly. *(See
-[Quality of life](mods/quality-of-life.md).)*
+[Dimension 1](mods/dimension-1.md).)*
 
 ### JEI — Just Enough Items (recipe lookup)
 
 A searchable list of **every item and recipe**. Click an item to see how to craft it, or what it
 crafts into. Your first stop whenever you wonder "how do I make this?" *(See
-[Quality of life](mods/quality-of-life.md).)*
+[Dimension 1](mods/dimension-1.md).)*
 
 ### JourneyMap (the map)
 
 A live **minimap** and full-screen map. Mark waypoints, see explored terrain, and find your way
-back home. *(See [Quality of life](mods/quality-of-life.md).)*
+back home. *(See [Dimension 1](mods/dimension-1.md).)*
 
 ### Voice subtitles (Voice Translate)
 
@@ -90,18 +90,19 @@ spawn in a custom overworld and unlock further realms as you progress. See
 
 Some mods add **no content** — they just make the game run smoother (less memory, faster rendering,
 fewer hiccups). You'll never "use" them directly; they work in the background. *(See
-[Quality of life](mods/quality-of-life.md).)*
+[Dimension 1](mods/dimension-1.md).)*
 
 ---
 
-## The 0–10 progression ranking
+## Dimensions & the mod tags
 
-Throughout [the mods](mods/index.md) section, each mod has a **0–10 rank**. It describes *when* a
-mod tends to matter in a playthrough, **not** how good it is:
+The pack is organized by **dimension** — the realms you travel between (see
+[Dimensions](mods/index.md)). On each mod card you'll see one of two tags:
 
-- **0** — useful from minute one (maps, performance, UI, social, fast travel).
-- **1–3** — early game (basic survival, exploration, first structures).
-- **4–6** — mid game (you have iron/diamond and are branching out).
-- **7–9** — endgame (dragons, strongholds, the End, top-tier gear).
+- **Dimension 1** (and later Dimension 2, 3…) — content that belongs to that specific realm: its
+  biomes, creatures, structures and caves.
+- **All dimensions** — universal mods that work everywhere and follow you between realms: the UI,
+  performance, combat, social and gear systems.
 
-A rank-0 mod is not "worse" than a rank-9 one — JEI is rank 0 and you'll use it the entire game.
+Right now only **Dimension 1** (a familiar overworld) is open, so all current content lives there.
+New realms unlock over time through **[Realm Gates](custom/realmgates.md)**.

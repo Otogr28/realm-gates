@@ -12,7 +12,7 @@ hide:
   <p class="sb-hero__lede">A cozy survival-adventure pack for playing with friends — new worlds, dragons, ships, real-time <strong>voice &amp; chat translation</strong>, and a few mods built just for this server.</p>
   <div class="sb-hero__cta">
     <a class="md-button md-button--primary" href="getting-started/install/">Get started</a>
-    <a class="md-button" href="mods/">Explore the mods</a>
+    <a class="md-button" href="mods/">Explore the dimensions</a>
   </div>
 </div>
 
@@ -36,8 +36,8 @@ hide:
   </a>
   <a class="sb-card" href="mods/">
     <span class="sb-card__icon">🧩</span>
-    <h3>The mods</h3>
-    <span>Everything in the pack, grouped by when it matters.</span>
+    <h3>Dimensions</h3>
+    <span>The realms you travel between — and every mod inside them.</span>
   </a>
 </div>
 
@@ -67,23 +67,23 @@ hide:
 
 <div class="mod-grid">
   <a class="mod-card" href="https://modrinth.com/mod/ice-and-fire-dragons" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Endgame</span><img src="assets/mods/ice-and-fire-banner.webp" alt="Ice and Fire" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/ice-and-fire-banner.webp" alt="Ice and Fire" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Ice &amp; Fire</span><span class="mod-card__p">Tame dragons and fight mythical beasts for the strongest gear in the pack.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/alexs-caves" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Mid game</span><img src="assets/mods/alexs-caves-banner.webp" alt="Alex's Caves" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/alexs-caves-banner.webp" alt="Alex's Caves" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Alex's Caves</span><span class="mod-card__p">Six exotic underground worlds, each its own ecosystem.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/oh-the-biomes-weve-gone" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Early game</span><img src="assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">50+ new biomes</span><span class="mod-card__p">A world full of new forests, wood, crops and scenery.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
   <a class="mod-card" href="https://modrinth.com/mod/smallships" target="_blank" rel="noopener">
-    <span class="mod-card__media"><span class="mod-card__tier">Mid game</span><img src="assets/mods/small-ships-banner.jpeg" alt="Small Ships" loading="lazy"></span>
+    <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="assets/mods/small-ships-banner.jpeg" alt="Small Ships" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Small Ships</span><span class="mod-card__p">Sail real navigable boats and ships across the sea.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
 </div>
 
-<p style="margin:1.5rem 0 3rem;"><a class="md-button" href="mods/">See the full mod list</a></p>
+<p style="margin:1.5rem 0 3rem;"><a class="md-button" href="mods/">Explore the dimensions</a></p>
 
 <p class="sb-foot">You'll need <strong>Minecraft: Java Edition</strong> with a <strong>Forge 1.20.1</strong> instance, and the server address — ask the admin.<br>Mod artwork © their respective authors, via Modrinth.</p>

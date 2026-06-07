@@ -306,6 +306,24 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
   color: var(--sb-navy-950); background: var(--sb-gold);
   padding: 0.18em 0.6em; border-radius: 999px;
 }
+/* "All dimensions" — universal mods: outline gold (distinct from a solid Dimension pill) */
+.mod-card__tier--all {
+  background: rgba(8, 17, 39, 0.78); color: var(--sb-gold);
+  border: 1px solid var(--sb-gold); backdrop-filter: blur(2px);
+}
+/* "Coming soon" — muted */
+.mod-card__tier--soon {
+  background: rgba(138, 150, 182, 0.22); color: var(--sb-ink); border: 1px solid var(--sb-line-soft);
+}
+
+/* Locked / coming-soon card: dimmed, dashed, no hover lift, not interactive */
+.mod-card.is-soon {
+  border-style: dashed; border-color: var(--sb-line); opacity: 0.92; cursor: default;
+}
+.mod-card.is-soon:hover { transform: none; border-color: var(--sb-line); box-shadow: var(--sb-shadow); }
+.mod-card.is-soon .mod-card__media { filter: grayscale(0.5) brightness(0.8); }
+.mod-card.is-soon .mod-card__media.is-empty { color: var(--sb-ink-dim); filter: none; }
+.mod-card.is-soon:hover .mod-card__h { color: #fff; }
 .mod-card__body { padding: 0.85rem 1rem 1.05rem; display: flex; flex-direction: column; gap: 0.3rem; flex: 1; }
 .mod-card__h {
   margin: 0; font-family: "Fraunces", serif; font-size: 1.12rem; font-weight: 600; color: #fff;

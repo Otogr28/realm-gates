@@ -34,8 +34,8 @@ The server is **whitelisted** — only approved players can join. To get on:
 ## Be a good guest
 
 - **No griefing.** Some mods can cause **terrain-destroying explosions** (e.g. the Nucleeper /
-  Nuclear Bomb in [Alex's Caves](mods/mid-game.md#alexs-caves), and tamed dragons in
-  [Ice and Fire](mods/endgame.md)). Keep that destruction away from shared
+  Nuclear Bomb in [Alex's Caves](mods/dimension-1.md#alexs-caves), and tamed dragons in
+  [Ice and Fire](mods/dimension-1.md)). Keep that destruction away from shared
   areas and other people's builds.
 - **Mind performance.** Big mobs (dragons, hydras, bosses) and huge farms can strain the server. If
   things get laggy, thin out heavy entities.
