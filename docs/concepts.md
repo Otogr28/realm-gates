@@ -1,108 +1,81 @@
-<div class="sb-banner" style="background-image:linear-gradient(125deg,#1a2a6b 0%,#0a1330 55%,#0a1736 100%)">
+<div class="sb-banner sb-banner--glitch" style="background-image:linear-gradient(125deg,#1a2a6b 0%,#0a1330 55%,#1a0f2e 100%)">
   <div class="sb-banner__inner">
-    <p class="sb-eyebrow">The basics</p>
+    <p class="sb-eyebrow">Lore &amp; powers</p>
     <h1>Concepts explained</h1>
   </div>
 </div>
 
-A plain-language glossary of the things you'll run into in Realm Gates. No jargon — just "what
-is this and why do I care?"
+The ideas, powers and dangers you'll meet across the realms — in plain language. No menus, no
+settings, just *what it is and why it matters*.
 
 ---
 
-## Forge
+## The Corruption
 
-The mod loader. Realm Gates runs on **Minecraft Forge 1.20.1**. Your launcher needs a Forge
-1.20.1 instance before any mod will load. See [Install the modpack](getting-started/install.md).
+Something is **unmaking the dimensions**. Realms fracture, flicker and go dark at the edges — a
+spreading digital rot that swallows whole worlds. **Realm Gates** is the effort to push back: to
+reach each realm, hold it stable, and reopen it for players.
 
-## Mods, configs, and the modpack
+That's why only **Dimension 1** stands fully open today. The others are still **sealed or
+corrupted** — you'll see them listed as *coming soon* until they're reclaimed.
 
-- A **mod** is a `.jar` file that adds or changes something in the game.
-- A **config** tells a mod how to behave (numbers, toggles).
-- The **modpack** is just the agreed-upon set of mods + configs that everyone on the server uses,
-  so we all play the same game. You keep yours in sync by [updating](getting-started/updating.md).
+## Realms & dimensions
 
-## Client-side vs. server-side mods
+A **realm** (or dimension) is an entire world of its own — its own land, creatures, weather and
+rules. You begin in **Dimension 1**, a familiar overworld. More realms open over time as they're
+recovered from the Corruption, each with a different feel and its own dangers.
 
-- **Server-side** mods run on the server (world generation, monsters, rules).
-- **Client-side** mods run on your computer (menus, visuals, maps).
-- Most mods are **both**. A few are **client-only** — they'd crash the server, so the server
-  filters those out automatically, but you still keep them in your `mods/` folder. You don't have
-  to think about this; the [update process](getting-started/updating.md) handles it.
+## Realm Gates
 
-## Online vs. offline mode
+The **gates** are how you cross between realms — and the law that decides *where* you can go and
+*when*. A realm stays closed until you've earned the way in: clearing a challenge, finding a key,
+or proving you're ready. Some paths only run one way, so choose your crossings well.
 
-This server currently runs in **offline mode** so friends without a premium Minecraft account can
-join the beta. Practically, that means access is controlled by the **whitelist** (by player name),
-so your in-game name matters — log in with the **exact** name the admin added. More on
-[Server info](server-info.md).
+## Waystones — fast travel
 
-## Whitelist
+Stones scattered through the world that you **activate** by touching them. Once awakened, you can
+**teleport between any you've found** — a personal web of shortcuts so the huge realms never feel
+like a slog.
 
-A list of who is allowed on the server. If you're not on it, you can't join — ask the admin to add
-your **exact** in-game name. See [Server info](server-info.md).
+## Companions
 
----
+A **personal ally** that fights at your side. You choose its **class** — *warrior* (frontline
+tank), *range* (marksman), *summoner* (calls minions) or *mage* (spells &amp; healing) — and it
+**grows with you**: it levels from kills, learns abilities you piece together, and can even fetch
+items for you.
 
-## Things you'll see in-game
+## Pictos &amp; Luminas
 
-### Waystones (fast travel)
+Your companion's **build layer**. **Pictos** are equippable pieces that grant stats plus a special
+passive. Keep one equipped long enough and your companion **learns** its essence as a **Lumina** —
+a passive you can keep *without* taking up a Picto slot. Mix and match to shape a fighter that's
+truly yours.
 
-Stone blocks you **activate** by clicking them. Once activated, a waystone joins your travel list
-so you can teleport between any waystones you've discovered. They spawn in villages and out in the
-world, which makes the huge modded map manageable. *(Mod: [Waystones](mods/dimension-1.md).)*
+## Magic
 
-### Curios (extra equipment slots)
+Hand-crafted spellcasting. Instead of fixed spells, you **build your own** from **glyphs** —
+choosing the shape, the effect and the twist — then cast your creation. Your spellbook is whatever
+you imagine.
 
-Some items aren't armor or held tools — they're **charms, rings, belts, backpacks** and the like.
-**Curios** adds dedicated slots for them, opened with a key in your inventory screen. It's a shared
-system many mods plug into.
+## Trinkets &amp; charms
 
-### Jade (the tooltip overlay)
+Not everything powerful is armor or a sword. **Charms, rings, belts and amulets** go in their own
+dedicated slots, stacking bonuses and abilities on top of your normal gear.
 
-Look at a block or creature and a small panel appears showing **what it is**, its health, the tool
-needed to mine it, and more. Great for learning a modded world quickly. *(See
-[Dimension 1](mods/dimension-1.md).)*
+## Dragons &amp; beasts
 
-### JEI — Just Enough Items (recipe lookup)
+The realms are guarded by **apex monsters** — fire, ice and lightning **dragons** you can raise
+from an egg and one day **ride**, plus mythical beasts hoarding the best loot. The strongest gear
+in the game is forged from what you take off them.
 
-A searchable list of **every item and recipe**. Click an item to see how to craft it, or what it
-crafts into. Your first stop whenever you wonder "how do I make this?" *(See
-[Dimension 1](mods/dimension-1.md).)*
+## Speaking across languages
 
-### JourneyMap (the map)
-
-A live **minimap** and full-screen map. Mark waypoints, see explored terrain, and find your way
-back home. *(See [Dimension 1](mods/dimension-1.md).)*
-
-### Voice subtitles (Voice Translate)
-
-The floating text above a speaker's head is **Voice Translate**, translating their voice into your
-chosen language in real time. Set it up in [Voice & chat translation](getting-started/voice-and-chat.md).
-
-### Realm Gates (dimensions & progression)
-
-A custom system that decides **which dimensions you can travel to and when**. On this server you
-spawn in a custom overworld and unlock further realms as you progress. See
-[Realm Gates](custom/realmgates.md).
-
-### Performance mods (FPS helpers)
-
-Some mods add **no content** — they just make the game run smoother (less memory, faster rendering,
-fewer hiccups). You'll never "use" them directly; they work in the background. *(See
-[Dimension 1](mods/dimension-1.md).)*
+Friends who speak different languages can still adventure together. **Voice Translate** shows
+**floating subtitles above a speaker's head**, translated into *your* language in real time — and
+it translates text chat too. Just talk; everyone understands.
 
 ---
 
-## Dimensions & the mod tags
-
-The pack is organized by **dimension** — the realms you travel between (see
-[Dimensions](mods/index.md)). On each mod card you'll see one of two tags:
-
-- **Dimension 1** (and later Dimension 2, 3…) — content that belongs to that specific realm: its
-  biomes, creatures, structures and caves.
-- **All dimensions** — universal mods that work everywhere and follow you between realms: the UI,
-  performance, combat, social and gear systems.
-
-Right now only **Dimension 1** (a familiar overworld) is open, so all current content lives there.
-New realms unlock over time through **[Realm Gates](custom/realmgates.md)**.
+!!! tip "Want the practical side?"
+    This page is the *story* side. For how to install, update and join, head to
+    [Getting started](getting-started/install.md) and [Server info](server-info.md).
