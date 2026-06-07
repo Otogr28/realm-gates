@@ -1,0 +1,279 @@
+# ============================================================
+#  Realm Gates — mod catalogue (single source of truth)
+# ============================================================
+#  Every mod in the pack is an OBJECT here. The wiki renders its
+#  cards/badges from this data (via the mod_card macro in main.py),
+#  so there is NO hand-written "Aincrad" pill in the markdown anymore.
+#
+#  To assign a mod to a dimension, set its `dimension:` to one of the
+#  keys under `dimensions:` below (e.g. `dimension: aincrad`).
+#  Leave it OUT (or `dimension: ~`) and the mod shows the neutral
+#  "Unassigned" badge — it will NOT default to Aincrad.
+#
+#  Fields per mod:
+#    name       display title (shown on the card)
+#    desc       one-line blurb
+#    dimension  key from `dimensions:` below, or omit for unassigned
+#    img        artwork under docs/assets/...  (omit for emoji/blank)
+#    emoji      fallback glyph when there is no img (e.g. "⚰️")
+#    media      extra media classes: "icon" (square logo) | "empty"
+#    href       internal page slug (e.g. "oh-the-biomes-weve-gone")
+#    url        external link (Modrinth/CurseForge) — used on the home teaser
+#    cta        link label ("Details →" | "Mod page ↗" | "Open →")
+# ============================================================
+
+# --- Dimensions (the assignable tags) -----------------------
+#  `badge`   text shown in the pill
+#  `variant` CSS modifier: "" (solid gold) | "all" | "soon"
+dimensions:
+  aincrad:
+    badge: Aincrad
+    variant: ""
+    # Hero/cover artwork for the realm (path under docs/assets/...).
+    # Used by the Aincrad banner (mods/dimension-1.md) and the home card.
+    image: assets/mods/aincrad-banner.webp
+  all:
+    badge: All dimensions
+    variant: all
+  # Dimension 2 & 3 exist as realms but have no mods assigned yet.
+  dim2:
+    badge: Dimension 2
+    variant: soon
+  dim3:
+    badge: Dimension 3
+    variant: soon
+
+# Badge used when a mod has no `dimension` assigned yet.
+# (Replaces the old hard-coded "Aincrad" default.)
+unassigned:
+  badge: Unassigned
+  variant: unassigned
+
+# --- Mods, grouped exactly like the All-mods page sections ---
+groups:
+  world:
+    title: World & creatures
+    mods:
+      - name: Oh The Biomes We've Gone
+        href: oh-the-biomes-weve-gone
+        img: assets/mods/biomes-weve-gone-banner.webp
+        desc: "50+ new biomes, ~24 woods, crops and fruit — a huge, varied world."
+        # dimension: ~   (no realm assigned yet)
+      - name: Alex's Caves
+        href: alexs-caves
+        img: assets/mods/alexs-caves-banner.webp
+        desc: "Six exotic cave worlds — robots, dinosaurs, a toxic wasteland, the deep ocean and more."
+      - name: "Ice and Fire: Dragons"
+        href: ice-and-fire
+        img: assets/mods/ice-and-fire-banner.webp
+        desc: "Dragons and mythical beasts. Tame one and earn the pack's strongest gear."
+      - name: Creeper Overhaul
+        href: creeper-overhaul
+        img: assets/mods/creeper-overhaul-banner.webp
+        desc: "16 biome-specific creepers, each with its own look, behavior and drops."
+      - name: Small Ships
+        href: small-ships
+        img: assets/mods/small-ships-banner.jpeg
+        desc: "Navigable boats and warships — sails, cargo holds and cannons."
+      - name: Zombie Awareness
+        href: zombie-awareness
+        img: assets/mods/zombie-awareness-banner.webp
+        desc: "Smarter, scarier mobs that hunt you by light, sound and your scent."
+
+  structures:
+    title: Structures
+    mods:
+      - name: Better Strongholds
+        href: yungs-better-strongholds
+        img: assets/mods/yungs-better-strongholds-banner.webp
+        desc: "Large, dangerous dungeons that are actually worth exploring."
+      - name: Better Nether Fortresses
+        href: yungs-better-nether-fortresses
+        img: assets/mods/yungs-better-nether-fortresses-banner.webp
+        desc: "Bigger, more interesting fortresses to explore."
+      - name: Better End Island
+        href: yungs-better-end-island
+        img: assets/mods/yungs-better-end-island-banner.webp
+        desc: "Redesigns the central End island and the dragon fight."
+
+  ui:
+    title: Information & UI
+    mods:
+      - name: Just Enough Items
+        href: jei
+        img: assets/mods/jei-banner.jpeg
+        dimension: all
+        desc: "Search every item and recipe in the pack. Your #1 tool."
+      - name: Just Enough Resources
+        href: just-enough-resources
+        img: assets/mods/just-enough-resources-banner.webp
+        dimension: all
+        desc: "Where ores spawn, what mobs drop, and how to find things."
+      - name: Jade
+        href: jade
+        img: assets/mods/jade-banner.png
+        dimension: all
+        desc: "Look at any block or mob to see what it is and the right tool."
+      - name: JourneyMap
+        href: journeymap
+        img: assets/mods/journeymap.webp
+        media: icon
+        dimension: all
+        desc: "A live minimap and full-screen map with waypoints."
+      - name: AppleSkin
+        href: appleskin
+        img: assets/mods/appleskin.png
+        media: icon
+        dimension: all
+        desc: "See how filling food really is, right on the HUD."
+      - name: Controlling
+        href: controlling
+        img: assets/mods/controlling.webp
+        media: icon
+        dimension: all
+        desc: "Make the keybind menu searchable and fix conflicts."
+      - name: Just Enough Breeding
+        href: just-enough-breeding
+        img: assets/mods/just-enough-breeding-banner.webp
+        dimension: all
+        desc: "Shows how to breed each animal, inside JEI."
+      - name: Highlighter
+        href: highlighter
+        img: assets/mods/highlighter-banner.webp
+        dimension: all
+        desc: "Subtly outlines the block you're looking at."
+
+  performance:
+    title: Performance
+    mods:
+      - name: Entity Culling
+        href: entity-culling
+        img: assets/mods/entity-culling-banner.gif
+        dimension: all
+        desc: "Skips rendering things you can't see, for more FPS."
+      - name: FerriteCore
+        href: ferrite-core
+        img: assets/mods/ferrite-core.webp
+        media: icon
+        dimension: all
+        desc: "Cuts the game's memory use — fewer hiccups."
+      - name: ImmediatelyFast
+        href: immediatelyfast
+        img: assets/mods/immediatelyfast.webp
+        media: icon
+        dimension: all
+        desc: "Speeds up rendering of text, items and UI."
+      - name: Clumps
+        href: clumps
+        img: assets/mods/clumps.webp
+        media: icon
+        dimension: all
+        desc: "Merges nearby XP orbs into one, reducing farm lag."
+
+  combat:
+    title: Combat, travel & gear
+    mods:
+      - name: Epic Fight
+        href: epic-fight
+        img: assets/mods/epic-fight-banner.webp
+        dimension: all
+        desc: "A full action-combat overhaul: combos, dodging, parrying. Press <strong>R</strong>."
+      - name: Waystones
+        href: waystones
+        img: assets/mods/waystones.webp
+        media: icon
+        dimension: all
+        desc: "Fast travel between activated waystones across the world."
+      - name: Carry On
+        href: carry-on
+        img: assets/mods/carry-on-banner.webp
+        dimension: all
+        desc: "Pick up and carry chests (with contents) and even mobs."
+      - name: Traveler's Backpack
+        href: travelers-backpack
+        img: assets/mods/travelers-backpack-banner.webp
+        dimension: all
+        desc: "Big wearable backpacks with crafting, fluid tanks and perks."
+      - name: Easy Villagers
+        href: easy-villagers
+        img: assets/mods/easy-villagers.webp
+        media: icon
+        dimension: all
+        desc: "Pick villagers up and manage trades easily."
+
+  magic:
+    title: Magic, decor & social
+    mods:
+      - name: Ars Nouveau
+        href: ars-nouveau
+        img: assets/mods/ars-nouveau.webp
+        media: icon
+        dimension: all
+        desc: "A deep spell-crafting magic system — build spells from glyphs."
+      - name: Supplementaries
+        href: supplementaries
+        img: assets/mods/supplementaries-banner.webp
+        dimension: all
+        desc: "Tons of decorative and functional blocks: signs, lights, gadgets."
+      - name: Amendments
+        href: amendments
+        img: assets/mods/amendments-banner.webp
+        dimension: all
+        desc: "Small tweaks that make vanilla blocks more interactive."
+      - name: Corail Tombstone
+        href: corail-tombstone
+        emoji: "⚰️"
+        media: empty
+        dimension: all
+        desc: "Die and your items wait safely in a grave — plus optional soul magic."
+      - name: Vanilla Backport
+        href: vanilla-backport
+        img: assets/mods/vanilla-backport-banner.webp
+        dimension: all
+        desc: "Brings features from newer Minecraft versions into 1.20.1."
+      - name: Simple Voice Chat
+        href: simple-voice-chat
+        img: assets/mods/simple-voice-chat-banner.webp
+        dimension: all
+        desc: "Proximity voice chat — the base our Voice Translate is built on."
+      - name: No Chat Reports
+        href: no-chat-reports
+        img: assets/mods/no-chat-reports-banner.webp
+        dimension: all
+        desc: "Disables Minecraft's chat-reporting system."
+      - name: FancyMenu
+        href: fancymenu
+        img: assets/mods/fancymenu-banner.png
+        dimension: all
+        desc: "Powers the custom Realm Gates main-menu theme."
+      - name: Spawn Animations
+        href: spawn-animations
+        img: assets/mods/spawn-animations-banner.webp
+        dimension: all
+        desc: "Creatures rise and animate into the world instead of popping in."
+      - name: Enhanced Visuals
+        href: enhanced-visuals
+        img: assets/mods/enhanced-visuals.webp
+        media: icon
+        dimension: all
+        desc: "Screen effects — like a fire/blood overlay when you're hurt."
+
+# --- Curated set for the HOME page teaser (external links) --
+#  These reference mods by their group/name but point to Modrinth.
+home_teaser:
+  - name: Ice & Fire
+    img: assets/mods/ice-and-fire-banner.webp
+    url: https://modrinth.com/mod/ice-and-fire-dragons
+    desc: "Tame dragons and fight mythical beasts for the strongest gear in the pack."
+  - name: Alex's Caves
+    img: assets/mods/alexs-caves-banner.webp
+    url: https://modrinth.com/mod/alexs-caves
+    desc: "Six exotic underground worlds, each its own ecosystem."
+  - name: 50+ new biomes
+    img: assets/mods/biomes-weve-gone-banner.webp
+    url: https://modrinth.com/mod/oh-the-biomes-weve-gone
+    desc: "A world full of new forests, wood, crops and scenery."
+  - name: Small Ships
+    img: assets/mods/small-ships-banner.jpeg
+    url: https://modrinth.com/mod/small-ships
+    desc: "Sail real navigable boats and ships across the sea."

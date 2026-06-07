@@ -348,6 +348,12 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
 .mod-card__tier--soon {
   background: rgba(138, 150, 182, 0.22); color: var(--sb-ink); border: 1px solid var(--sb-line-soft);
 }
+/* "Unassigned" — mod not yet pinned to a realm. Neutral, never gold/Aincrad.
+   Quiet navy chip so it reads as "no realm yet", not as a feature. */
+.mod-card__tier--unassigned {
+  background: rgba(8, 17, 39, 0.72); color: var(--sb-ink-dim);
+  border: 1px dashed rgba(232, 236, 245, 0.22); backdrop-filter: blur(2px);
+}
 
 /* Locked / coming-soon card: dimmed, dashed, no hover lift, not interactive */
 .mod-card.is-soon {
@@ -467,6 +473,61 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
   box-shadow: inset 1px 1px 0 rgba(255,255,255,0.22), inset -2px -2px 0 rgba(0,0,0,0.32);
 }
 
+/* ============================================================
+   "COMING SOON" release banner  (home hero)
+   Pixel arcade marquee: gold ticker label + neutral release line.
+   Hard edges, dithered top rule, blinking pixel dot — reads like a
+   game's title screen, stays legible & on-brand (navy + gold).
+   ============================================================ */
+.sb-soon {
+  position: relative;
+  display: flex; flex-wrap: wrap; align-items: center; gap: .55rem 1rem;
+  margin: 0 0 1.6rem; padding: .7rem .95rem;
+  background:
+    linear-gradient(180deg, rgba(16,32,70,.55), rgba(8,17,39,.78));
+  border: 2px solid var(--sb-line);
+  box-shadow: var(--sb-shadow),
+              inset 1px 1px 0 rgba(255,255,255,.06),
+              inset -2px -2px 0 rgba(0,0,0,.45);
+  /* dithered top edge — corruption nibbling at the marquee */
+  background-image:
+    repeating-linear-gradient(90deg,
+      var(--sb-gold) 0 3px, transparent 3px 6px),
+    linear-gradient(180deg, rgba(16,32,70,.55), rgba(8,17,39,.78));
+  background-size: 100% 2px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left, center;
+}
+/* the gold "COMING SOON" pill — pixel ticker */
+.sb-soon__tag {
+  display: inline-flex; align-items: center; gap: .45em;
+  font-family: var(--sb-font-pixel);
+  font-size: .82rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+  color: var(--sb-navy-950); background: var(--sb-gold);
+  padding: .18em .6em; border-radius: 3px;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.35), inset -2px -2px 0 rgba(0,0,0,.22);
+  white-space: nowrap;
+}
+/* blinking pixel dot — step animation, square (no blur) */
+.sb-soon__dot {
+  width: .5em; height: .5em; background: var(--sb-navy-950);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.25);
+  animation: sb-soon-blink 1.2s steps(1) infinite;
+}
+@keyframes sb-soon-blink { 0%,49% { opacity: 1; } 50%,100% { opacity: .15; } }
+/* the release line — readable sans, dim, with a pixel arrow accent */
+.sb-soon__text {
+  font-size: .9rem; color: var(--sb-ink-body); line-height: 1.3;
+}
+.sb-soon__text strong { color: var(--sb-ink); font-weight: 600; }
+.sb-soon__text .sb-soon__lead {
+  font-family: var(--sb-font-pixel); color: var(--sb-gold);
+  font-size: .92rem; letter-spacing: .02em; margin-right: .15em;
+}
+@media (prefers-reduced-motion: reduce) {
+  .sb-soon__dot { animation: none; opacity: 1; }
+}
+
 /* Crisp, crunchy rendering for the small mod logos */
 .mod-card__media.is-icon img { image-rendering: pixelated; }
 
@@ -537,3 +598,4 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
   margin: 0 .15em -.02em 0; vertical-align: middle; }
 .sb-tier-dot--aincrad { background: var(--sb-gold); }
 .sb-tier-dot--all { background: rgba(8,17,39,.78); border: 1px solid var(--sb-gold); }
+.sb-tier-dot--unassigned { background: rgba(8,17,39,.78); border: 1px dashed rgba(232,236,245,.32); }

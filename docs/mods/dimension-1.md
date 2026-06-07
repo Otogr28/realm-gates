@@ -3,7 +3,7 @@ hide:
   - toc
 ---
 
-<div class="sb-banner" style="background-image:url('../../assets/mods/biomes-weve-gone-banner.webp')">
+<div class="sb-banner" style="background-image:url('../../assets/mods/aincrad-banner.webp')">
   <div class="sb-banner__inner">
     <p class="sb-eyebrow">Dimension 1 · your home realm</p>
     <h1>Aincrad</h1>
@@ -16,9 +16,9 @@ creatures and reworked structures.
 
 !!! info "Where are the mods?"
     To keep things in one place for now, **every mod is listed together on the
-    [All mods](all-dimensions.md) page** — each with its own friendly write-up. The ones tagged
-    **Aincrad** there are this realm's content (world, creatures and structures); the rest are
-    universal mods that follow you everywhere.
+    [All mods](all-dimensions.md) page** — each with its own friendly write-up. We're still pinning
+    the world, creature and structure mods to the realms they belong to (they show as **Unassigned**
+    until then); the **All dimensions** mods are universal and follow you everywhere.
 
 <div class="sb-cards">
   <a class="sb-card" href="../all-dimensions/"><span class="sb-card__icon sb-ico-dimensions"></span><h3>Browse all mods →</h3><span>The full catalogue, with a page for every mod.</span></a>

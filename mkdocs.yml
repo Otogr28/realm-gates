@@ -11,6 +11,7 @@ docs_dir: docs
 # (It still exists in the repo for the optional self-hosted Caddy deploy.)
 exclude_docs: |
   private/
+  _data/
 
 theme:
   name: material
@@ -60,6 +61,12 @@ markdown_extensions:
 
 plugins:
   - search
+  # Data-driven mod cards: each mod is an object in docs/_data/mods.yml
+  # (with its `dimension:` tag); main.py renders the cards/badges from it.
+  - macros:
+      module_name: main
+      include_yaml:
+        - mods: docs/_data/mods.yml
 
 # Keep the password-protected /private/ pages out of the nav without failing --strict builds.
 validation:
