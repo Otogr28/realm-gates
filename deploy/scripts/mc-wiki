@@ -9,7 +9,7 @@
 # Install: copy to /usr/local/bin/mc-wiki, chmod +x.
 set -euo pipefail
 
-REPO="${WIKI_REPO:-/opt/summerBuddies-wiki}"   # git checkout of the wiki repo on the VPS
+REPO="${WIKI_REPO:-/opt/realm-gates}"   # git checkout of the wiki repo on the VPS
 OUT="${WIKI_OUT:-/opt/wiki-site}"              # built site (mounted into Caddy at /srv)
 
 echo "==> Updating wiki source ($REPO)"

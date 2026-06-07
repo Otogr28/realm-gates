@@ -1,9 +1,9 @@
 site_name: Realm Gates
 site_description: Player guide for the Realm Gates Minecraft modpack (Forge 1.20.1)
 site_author: Realm Gates
-site_url: https://otogr28.github.io/summerBuddies-wiki/
-repo_url: https://github.com/Otogr28/summerBuddies-wiki
-repo_name: Otogr28/summerBuddies-wiki
+site_url: https://otogr28.github.io/realm-gates/
+repo_url: https://github.com/Otogr28/realm-gates
+repo_name: Otogr28/realm-gates
 docs_dir: docs
 
 # GitHub Pages is static hosting with no server-side auth, so the password-gated

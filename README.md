@@ -1,10 +1,10 @@
-# summerBuddies Wiki
+# Realm Gates
 
-Player-facing documentation for the **summerBuddies** Minecraft modpack (Forge 1.20.1), built with
+Player-facing documentation for the **Realm Gates** Minecraft modpack (Forge 1.20.1), built with
 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Navy + gold theme. Static site —
 no database, no login panel, minimal attack surface.
 
-🌐 **Live:** <https://otogr28.github.io/summerBuddies-wiki/> — hosted free on **GitHub Pages**.
+🌐 **Live:** <https://otogr28.github.io/realm-gates/> — hosted free on **GitHub Pages**.
 Every push to `master` rebuilds and redeploys automatically (`.github/workflows/deploy.yml`).
 
 > ⚠️ **This site is (will be) public. Never put server secrets here** — no IPs, no admin/infra
@@ -38,8 +38,8 @@ mkdocs.yml                 # config, nav, theme
 docs/
   index.md                 # home
   getting-started/         # install, voice & chat, updating
-  concepts.md              # plain-language glossary ("explain it simply")
-  mods/                    # mods grouped by 0–10 progression tier
+  concepts.md              # RPG lore glossary (realms, gates, companions, the Corruption)
+  mods/                    # mods grouped by dimension (Dimension 1 live; 2 & 3 coming soon)
   custom/                  # Realm Gates, Custom Companions, Voice Translate
   server-info.md           # rules, whitelist, etiquette (NO secrets)
   private/                 # example BLOCKED content (password-gated at the web server)

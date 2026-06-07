@@ -39,7 +39,7 @@ Player ─► Cloudflare (DDoS, WAF, Bot Fight, TLS, hides your VPS IP)
 ```bash
 sudo mkdir -p /opt/wiki /opt/wiki-site
 # clone the wiki repo somewhere stable:
-sudo git clone https://github.com/<you>/summerBuddies-wiki /opt/summerBuddies-wiki
+sudo git clone https://github.com/<you>/realm-gates /opt/realm-gates
 
 # copy this folder's compose + Caddyfile into /opt/wiki:
 sudo cp deploy/docker-compose.yml deploy/Caddyfile /opt/wiki/

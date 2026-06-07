@@ -11,7 +11,7 @@ import time
 import urllib.parse
 import urllib.request
 
-UA = "summerBuddies-wiki/1.0 (static modpack wiki; contact admin)"
+UA = "realm-gates/1.0 (static modpack wiki; contact admin)"
 OUT = os.path.join(os.path.dirname(__file__), "..", "..", "docs", "assets", "mods")
 OUT = os.path.abspath(OUT)
 os.makedirs(OUT, exist_ok=True)
