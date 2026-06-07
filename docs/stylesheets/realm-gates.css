@@ -599,3 +599,88 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
 .sb-tier-dot--aincrad { background: var(--sb-gold); }
 .sb-tier-dot--all { background: rgba(8,17,39,.78); border: 1px solid var(--sb-gold); }
 .sb-tier-dot--unassigned { background: rgba(8,17,39,.78); border: 1px dashed rgba(232,236,245,.32); }
+
+/* ============================================================
+   PRE-RELEASE LOCK GATE  (added 2026-06-07)
+   Used while the modpack is "Coming soon": the install page shows
+   a locked panel instead of the real instructions, and the
+   "1 · Install" card renders disabled.
+   ⟲ RESTORE ON RELEASE: see install.md (uncomment the real
+     instructions, delete the gate). This CSS block can stay — it
+     is inert once no .sb-lock / .is-locked markup is on the page.
+   ============================================================ */
+
+/* The big locked panel that replaces the install body */
+.sb-lock {
+  position: relative;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: 1rem; margin: 1.8rem 0 1.4rem; padding: 2.6rem 1.6rem 2.4rem;
+  border: 2px solid var(--sb-line);
+  background:
+    repeating-linear-gradient(90deg, var(--sb-gold) 0 3px, transparent 3px 6px),
+    radial-gradient(circle at 50% 0%, rgba(23,48,99,.6), transparent 70%),
+    linear-gradient(180deg, rgba(16,32,70,.55), rgba(8,17,39,.82));
+  background-size: 100% 2px, 100% 100%, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left, center, center;
+  box-shadow: var(--sb-shadow),
+              inset 1px 1px 0 rgba(255,255,255,.06),
+              inset -2px -2px 0 rgba(0,0,0,.45);
+}
+/* the padlock glyph — square pixel field with the gold lock icon */
+.sb-lock__icon {
+  width: 64px; height: 64px; display: block;
+  background:
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.7%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%275%27%20y%3D%2711%27%20width%3D%2714%27%20height%3D%279%27%20rx%3D%272%27%2F%3E%3Cpath%20d%3D%27M8%2011V8a4%204%200%200%201%208%200v3%27%2F%3E%3C%2Fsvg%3E")
+    center / 40px no-repeat,
+    var(--sb-gold-soft);
+  border: 2px solid var(--sb-line);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.05), inset -2px -2px 0 rgba(0,0,0,.4);
+}
+/* the gold "LOCKED" pixel pill */
+.sb-lock__tag {
+  display: inline-flex; align-items: center; gap: .45em;
+  font-family: var(--sb-font-pixel);
+  font-size: .82rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--sb-navy-950); background: var(--sb-gold);
+  padding: .2em .7em; border-radius: 3px;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.35), inset -2px -2px 0 rgba(0,0,0,.22);
+}
+.sb-lock__tag .sb-soon__dot { background: var(--sb-navy-950); }
+.md-typeset .sb-lock__title {
+  font-family: var(--sb-font-pixel) !important;
+  color: #fff; font-weight: 600; letter-spacing: .02em;
+  font-size: 1.6rem; margin: .2rem 0 0; border: none; padding: 0;
+}
+.sb-lock__text {
+  max-width: 46ch; color: var(--sb-ink-body); line-height: 1.6; font-size: .95rem; margin: 0;
+}
+.sb-lock__text strong { color: var(--sb-ink); font-weight: 600; }
+/* the "release date soon" sub-line — pixel arrow accent, dim */
+.sb-lock__note {
+  font-family: var(--sb-font-pixel); color: var(--sb-gold);
+  font-size: .95rem; letter-spacing: .02em; margin: .1rem 0 0;
+}
+.sb-lock__note::before { content: "▸ "; }
+
+/* Disabled / locked feature card (non-clickable "1 · Install") */
+.sb-card--locked {
+  cursor: not-allowed; opacity: .55;
+  filter: grayscale(.35);
+}
+.sb-card--locked:hover { transform: none; border-color: var(--sb-line-soft); }
+.sb-card--locked:hover .sb-card__icon { transform: none; }
+/* gold "Soon" pixel chip pinned to the locked card */
+.sb-card__lock {
+  align-self: flex-start; margin-top: .15rem;
+  display: inline-flex; align-items: center; gap: .4em;
+  font-family: var(--sb-font-pixel);
+  font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
+  color: var(--sb-gold); background: var(--sb-gold-soft);
+  border: 1px solid var(--sb-line);
+  padding: .12em .55em; border-radius: 3px;
+}
+.sb-card__lock::before {
+  content: ""; width: .85em; height: .85em; display: inline-block;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Crect%20x%3D%275%27%20y%3D%2711%27%20width%3D%2714%27%20height%3D%279%27%20rx%3D%272%27%2F%3E%3Cpath%20d%3D%27M8%2011V8a4%204%200%200%201%208%200v3%27%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
+}

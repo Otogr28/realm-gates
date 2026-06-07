@@ -5,6 +5,27 @@
   </div>
 </div>
 
+<div class="sb-lock" role="status">
+  <span class="sb-lock__icon" aria-hidden="true"></span>
+  <span class="sb-lock__tag"><span class="sb-soon__dot"></span>Locked</span>
+  <h2 class="sb-lock__title">Coming soon</h2>
+  <p class="sb-lock__text"><strong>Installation opens at release.</strong> The modpack &amp; server
+  aren't out yet, so the install steps are sealed for now. Check back here when the gate opens.</p>
+  <p class="sb-lock__note">Release date to be announced soon</p>
+</div>
+
+In the meantime, get a head start: read the **[Concepts](../concepts.md)** to learn the realms,
+gates and the Corruption — or browse **[the dimensions](../mods/index.md)** to see what's waiting
+on the other side.
+
+<!-- ============================================================
+     RESTORE ON RELEASE: uncomment everything below this line and
+     remove the <div class="sb-lock"> ... </div> gate above (and
+     the "In the meantime" paragraph). The instructions are the
+     real, working install steps — kept here verbatim so reactivating
+     is a copy/paste, not a rewrite.
+     ============================================================
+
 You need **Minecraft: Java Edition** and a launcher with **Forge 1.20.1** installed. Then you add
 the Realm Gates **mods** and **configs** to that Forge instance. Pick whichever method below
 suits you — they all end with the same result.
@@ -86,3 +107,7 @@ This keeps the modpack updated with a couple of clicks instead of re-downloading
 - Set up your language and microphone: **[Voice & chat translation](voice-and-chat.md)**.
 - Understand what gets reset on updates: **[Updating](updating.md)**.
 - Curious what a mod does? Browse **[The mods](../mods/index.md)**.
+
+     ============================================================
+     END RESTORE BLOCK
+     ============================================================ -->

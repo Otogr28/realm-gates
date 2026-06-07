@@ -14,19 +14,20 @@ hide:
   <h1 class="sb-hero__title">Realm <span class="sb-amp">Gates</span></h1>
   <p class="sb-hero__lede">Something is devouring the worlds. We slip from realm to realm through the gates — always one step ahead of the <strong>Corruption</strong>, surviving together.</p>
   <div class="sb-hero__cta">
-    <a class="md-button md-button--primary" href="getting-started/install/">Get started</a>
-    <a class="md-button" href="mods/">Explore the dimensions</a>
+    <a class="md-button md-button--primary" href="mods/">Explore the dimensions</a>
+    <a class="md-button" href="concepts/">Read the concepts</a>
   </div>
 </div>
 
 <p class="sb-eyebrow">Start here</p>
 
 <div class="sb-cards">
-  <a class="sb-card" href="getting-started/install/">
+  <div class="sb-card sb-card--locked" role="note" aria-disabled="true">
     <span class="sb-card__icon sb-ico-install"></span>
     <h3>Install</h3>
-    <span>Get the modpack into your launcher in a few minutes.</span>
-  </a>
+    <span>Opens at release — date to be announced soon.</span>
+    <span class="sb-card__lock">Soon</span>
+  </div>
   <a class="sb-card" href="getting-started/voice-and-chat/">
     <span class="sb-card__icon sb-ico-voice"></span>
     <h3>Voice &amp; translation</h3>

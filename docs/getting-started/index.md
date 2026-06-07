@@ -13,11 +13,12 @@ hide:
 Three quick steps and you're through the gate. Pick a card below.
 
 <div class="sb-cards">
-  <a class="sb-card" href="install/">
+  <div class="sb-card sb-card--locked" role="note" aria-disabled="true">
     <span class="sb-card__icon sb-ico-install"></span>
     <h3>1 · Install</h3>
-    <span>Get Forge 1.20.1 and the modpack into your launcher — one script, a ZIP, or Git.</span>
-  </a>
+    <span>Opens at release — the modpack isn't out yet. Release date to be announced soon.</span>
+    <span class="sb-card__lock">Soon</span>
+  </div>
   <a class="sb-card" href="voice-and-chat/">
     <span class="sb-card__icon sb-ico-voice"></span>
     <h3>2 · Voice &amp; translation</h3>
