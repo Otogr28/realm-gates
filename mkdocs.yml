@@ -1,8 +1,16 @@
 site_name: summerBuddies Wiki
 site_description: Player guide for the summerBuddies Minecraft modpack (Forge 1.20.1)
 site_author: summerBuddies
-# site_url is set once you have a domain, e.g. https://wiki.example.com
+site_url: https://otogr28.github.io/summerBuddies-wiki/
+repo_url: https://github.com/Otogr28/summerBuddies-wiki
+repo_name: Otogr28/summerBuddies-wiki
 docs_dir: docs
+
+# GitHub Pages is static hosting with no server-side auth, so the password-gated
+# /private/ section can't be protected there — exclude it from the published site.
+# (It still exists in the repo for the optional self-hosted Caddy deploy.)
+exclude_docs: |
+  private/
 
 theme:
   name: material
