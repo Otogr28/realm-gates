@@ -1,6 +1,11 @@
-# Realm Gates
+<div class="sb-banner" style="background-image:linear-gradient(125deg,#1a2a6b 0%,#0a1330 55%,#1a0f2e 100%)">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Custom mod · made for summerBuddies</p>
+    <h1>Realm Gates</h1>
+  </div>
+</div>
 
-!!! abstract "Custom mod — made for summerBuddies"
+!!! abstract "Dimension travel &amp; progression"
     A system that controls **which dimensions you can travel to, and when**. It's the backbone of
     how this server's world and progression are shaped.
 

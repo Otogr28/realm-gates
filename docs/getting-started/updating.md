@@ -1,4 +1,9 @@
-# Updating the modpack
+<div class="sb-banner" style="background-image:linear-gradient(125deg,#102046 0%,#0a1330 60%,#16285c 100%)">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Getting started</p>
+    <h1>Updating the modpack</h1>
+  </div>
+</div>
 
 When the admin says there's a new version, you update so your game matches the server. How you do
 it depends on how you installed:

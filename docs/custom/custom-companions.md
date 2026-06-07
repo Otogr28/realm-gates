@@ -1,6 +1,11 @@
-# Custom Companions
+<div class="sb-banner" style="background-image:linear-gradient(125deg,#3a2a12 0%,#0d1430 55%,#102046 100%)">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Custom mod · made for summerBuddies</p>
+    <h1>Custom Companions</h1>
+  </div>
+</div>
 
-!!! abstract "Custom mod — made for summerBuddies"
+!!! abstract "A personal companion that fights alongside you"
     A **personal companion** that fights alongside you, levels up, and grows into a build you
     design. Logistics (fetching items) is a handy bonus.
 

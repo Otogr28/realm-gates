@@ -1,6 +1,11 @@
-# Voice Translate
+<div class="sb-banner" style="background-image:url('/assets/mods/simple-voice-chat-banner.webp')">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Custom mod · made for summerBuddies</p>
+    <h1>Voice Translate</h1>
+  </div>
+</div>
 
-!!! abstract "Custom mod — made for summerBuddies"
+!!! abstract "Real-time voice &amp; chat translation"
     Real-time **voice and chat translation** with **floating subtitles** above the speaker's head,
     inspired by QSMP. It lets friends who speak different languages play together naturally.
 

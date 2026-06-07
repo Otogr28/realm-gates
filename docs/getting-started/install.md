@@ -1,4 +1,9 @@
-# Install the modpack
+<div class="sb-banner" style="background-image:linear-gradient(125deg,#16285c 0%,#0a1330 60%,#0a1736 100%)">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Getting started</p>
+    <h1>Install the modpack</h1>
+  </div>
+</div>
 
 You need **Minecraft: Java Edition** and a launcher with **Forge 1.20.1** installed. Then you add
 the summerBuddies **mods** and **configs** to that Forge instance. Pick whichever method below

@@ -1,133 +1,354 @@
 /* ============================================================
-   summerBuddies — navy + gold theme
-   A custom Material color scheme. Selected in mkdocs.yml via
-   palette > scheme: summerbuddies
+   summerBuddies — refined-minimal, cinematic navy + gold
+   Display: Fraunces (warm serif) · Body: Hanken Grotesk
    ============================================================ */
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Hanken+Grotesk:wght@400;500;600;700&display=swap');
+
+/* ---------------------------------------------------------- *
+ * 1. Color scheme (maps onto Material internals)
+ * ---------------------------------------------------------- */
 [data-md-color-scheme="summerbuddies"] {
-  /* Brand colors */
-  --sb-navy-900: #070f24; /* deepest background */
-  --sb-navy-800: #0a1532; /* page background */
-  --sb-navy-700: #0e1d44; /* header / nav / cards */
-  --sb-navy-600: #16285c; /* hovered surfaces */
-  --sb-navy-500: #1f3470; /* borders / accents */
-  --sb-gold:     #d4af37; /* primary accent (gold) */
-  --sb-gold-200: #e6c45a; /* gold hover / highlight */
-  --sb-gold-700: #a8851f; /* gold pressed */
-  --sb-ink:      #e8ecf5; /* main text */
-  --sb-ink-dim:  #aeb8d0; /* secondary text */
+  --sb-navy-950: #060c1d;
+  --sb-navy-900: #081127;
+  --sb-navy-800: #0b1733;
+  --sb-navy-700: #102046;
+  --sb-navy-600: #173063;
+  --sb-line:     rgba(212, 175, 55, 0.16);
+  --sb-line-soft: rgba(232, 236, 245, 0.08);
 
-  /* ---- Material core mappings ---- */
-  --md-primary-fg-color:        var(--sb-navy-700);
-  --md-primary-fg-color--light: var(--sb-navy-600);
-  --md-primary-fg-color--dark:  var(--sb-navy-900);
+  --sb-gold:     #e8c45a;
+  --sb-gold-deep:#c8a23f;
+  --sb-gold-soft: rgba(232, 196, 90, 0.14);
+
+  --sb-ink:      #eef1f8;
+  --sb-ink-body: #c4cde2;
+  --sb-ink-dim:  #8a96b6;
+
+  --sb-shadow: 0 18px 40px -20px rgba(0, 0, 0, 0.75);
+  --sb-shadow-hover: 0 28px 60px -22px rgba(0, 0, 0, 0.85);
+
+  /* Material mappings */
+  --md-primary-fg-color:        var(--sb-navy-900);
+  --md-primary-fg-color--light: var(--sb-navy-700);
+  --md-primary-fg-color--dark:  var(--sb-navy-950);
   --md-primary-bg-color:        var(--sb-ink);
-  --md-primary-bg-color--light: var(--sb-ink-dim);
-
   --md-accent-fg-color:         var(--sb-gold);
-  --md-accent-fg-color--transparent: rgba(212, 175, 55, 0.1);
-  --md-accent-bg-color:         var(--sb-navy-900);
 
-  /* Backgrounds + text (dark scheme) */
-  --md-default-bg-color:        var(--sb-navy-800);
+  --md-default-bg-color:        var(--sb-navy-900);
   --md-default-fg-color:        var(--sb-ink);
-  --md-default-fg-color--light: var(--sb-ink-dim);
-  --md-default-fg-color--lighter: rgba(232, 236, 245, 0.45);
-  --md-default-fg-color--lightest: rgba(232, 236, 245, 0.12);
+  --md-default-fg-color--light: var(--sb-ink-body);
+  --md-default-fg-color--lighter: var(--sb-ink-dim);
+  --md-default-fg-color--lightest: rgba(232, 236, 245, 0.1);
 
-  --md-typeset-color:           var(--sb-ink);
+  --md-typeset-color:           var(--sb-ink-body);
   --md-typeset-a-color:         var(--sb-gold);
 
-  /* Code blocks */
-  --md-code-bg-color:           var(--sb-navy-900);
+  --md-code-bg-color:           #0a1430;
   --md-code-fg-color:           #e7ecf8;
-
-  /* Footer */
-  --md-footer-bg-color:         var(--sb-navy-900);
-  --md-footer-bg-color--dark:   var(--sb-navy-900);
+  --md-footer-bg-color:         var(--sb-navy-950);
+  --md-footer-bg-color--dark:   var(--sb-navy-950);
 
   color-scheme: dark;
 }
 
-/* Links: gold, brighten on hover */
-[data-md-color-scheme="summerbuddies"] .md-typeset a {
-  color: var(--sb-gold);
-  text-decoration: none;
+/* ---------------------------------------------------------- *
+ * 2. Atmosphere: gradient mesh + grain
+ * ---------------------------------------------------------- */
+[data-md-color-scheme="summerbuddies"] body {
+  background-color: var(--sb-navy-950);
+  background-image:
+    radial-gradient(1100px 600px at 12% -8%, rgba(232, 196, 90, 0.10), transparent 60%),
+    radial-gradient(900px 700px at 95% 0%, rgba(23, 48, 99, 0.55), transparent 55%),
+    radial-gradient(1200px 900px at 50% 120%, rgba(16, 32, 70, 0.6), transparent 60%);
+  background-attachment: fixed;
 }
-[data-md-color-scheme="summerbuddies"] .md-typeset a:hover {
-  color: var(--sb-gold-200);
-  text-decoration: underline;
+/* subtle film grain over everything */
+[data-md-color-scheme="summerbuddies"] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.035;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
+.md-main, .md-header, .md-footer { position: relative; z-index: 1; }
 
-/* Header wordmark */
+/* Wider, airier content column */
+.md-grid { max-width: 72rem; }
+
+/* ---------------------------------------------------------- *
+ * 3. Typography
+ * ---------------------------------------------------------- */
+[data-md-color-scheme="summerbuddies"] body,
+.md-typeset { font-family: "Hanken Grotesk", system-ui, sans-serif; }
+
+[data-md-color-scheme="summerbuddies"] .md-typeset h1,
+[data-md-color-scheme="summerbuddies"] .md-typeset h2,
+[data-md-color-scheme="summerbuddies"] .md-typeset h3,
 .md-header__title {
-  font-weight: 700;
-  letter-spacing: 0.2px;
+  font-family: "Fraunces", Georgia, serif;
+  letter-spacing: -0.01em;
 }
-.md-header {
-  border-bottom: 2px solid var(--sb-gold);
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
-}
-
-/* Headings: gold accents + gold underline on h1/h2 */
 [data-md-color-scheme="summerbuddies"] .md-typeset h1 {
-  color: #ffffff;
-  font-weight: 700;
-  border-bottom: 2px solid var(--sb-gold);
-  padding-bottom: 0.25em;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.1rem;
+  line-height: 1.12;
+  margin-bottom: 0.4em;
 }
 [data-md-color-scheme="summerbuddies"] .md-typeset h2 {
-  color: var(--sb-gold-200);
-  border-bottom: 1px solid var(--sb-navy-500);
-  padding-bottom: 0.2em;
+  color: var(--sb-ink);
+  font-weight: 600;
+  margin-top: 2.4em;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--sb-line-soft);
 }
 [data-md-color-scheme="summerbuddies"] .md-typeset h3 {
   color: var(--sb-gold);
-}
-
-/* Active nav item in gold */
-[data-md-color-scheme="summerbuddies"] .md-nav__link--active,
-[data-md-color-scheme="summerbuddies"] .md-nav__item--active > .md-nav__link {
-  color: var(--sb-gold);
   font-weight: 600;
 }
+.md-header__title { font-weight: 700; font-size: 1.05rem; }
+.md-header { border-bottom: 1px solid var(--sb-line); backdrop-filter: blur(8px); background: rgba(8, 17, 39, 0.85) !important; }
 
-/* Inline code: subtle navy chip with gold text */
+/* links */
+[data-md-color-scheme="summerbuddies"] .md-typeset a { color: var(--sb-gold); text-decoration: none; transition: color .2s ease; }
+[data-md-color-scheme="summerbuddies"] .md-typeset a:hover { color: #fff; }
+
+/* ---------------------------------------------------------- *
+ * 4. Nav tabs — minimal, gold underline on active
+ * ---------------------------------------------------------- */
+.md-tabs { background: transparent; border-bottom: 1px solid var(--sb-line-soft); }
+.md-tabs__link { opacity: .8; font-weight: 500; transition: opacity .2s ease; }
+.md-tabs__link:hover { opacity: 1; }
+.md-tabs__item--active .md-tabs__link { opacity: 1; color: var(--sb-gold); }
+[data-md-color-scheme="summerbuddies"] .md-nav__link--active,
+[data-md-color-scheme="summerbuddies"] .md-nav__item--active > .md-nav__link { color: var(--sb-gold); font-weight: 600; }
+
+/* ---------------------------------------------------------- *
+ * 5. Inline code / tables / admonitions
+ * ---------------------------------------------------------- */
 [data-md-color-scheme="summerbuddies"] .md-typeset code {
-  background-color: var(--sb-navy-700);
-  color: var(--sb-gold-200);
-  border: 1px solid var(--sb-navy-500);
-  border-radius: 4px;
-}
-
-/* Tables: navy header row, gold border */
-[data-md-color-scheme="summerbuddies"] .md-typeset table:not([class]) th {
-  background-color: var(--sb-navy-700);
-  color: var(--sb-gold-200);
+  background: #0a1430;
+  color: var(--sb-gold);
+  border: 1px solid var(--sb-line-soft);
+  border-radius: 5px;
+  padding: 0.1em 0.4em;
 }
 [data-md-color-scheme="summerbuddies"] .md-typeset table:not([class]) {
-  border: 1px solid var(--sb-navy-500);
+  border: 1px solid var(--sb-line-soft);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--sb-shadow);
 }
-
-/* Admonitions: gold left border by default */
+[data-md-color-scheme="summerbuddies"] .md-typeset table:not([class]) th {
+  background: var(--sb-navy-700);
+  color: var(--sb-gold);
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
+  border: none;
+}
+[data-md-color-scheme="summerbuddies"] .md-typeset table:not([class]) td { border-top: 1px solid var(--sb-line-soft); }
 [data-md-color-scheme="summerbuddies"] .md-typeset .admonition,
 [data-md-color-scheme="summerbuddies"] .md-typeset details {
-  border-left: 4px solid var(--sb-gold);
-  background-color: var(--sb-navy-700);
+  border: 1px solid var(--sb-line-soft);
+  border-left: 3px solid var(--sb-gold);
+  border-radius: 12px;
+  background: rgba(16, 32, 70, 0.45);
+  box-shadow: var(--sb-shadow);
 }
 
-/* Search box */
-[data-md-color-scheme="summerbuddies"] .md-search__input {
-  background-color: rgba(255, 255, 255, 0.08);
-}
-
-/* "Buttons" via attr_list .md-button get a gold outline */
+/* ---------------------------------------------------------- *
+ * 6. Buttons
+ * ---------------------------------------------------------- */
 [data-md-color-scheme="summerbuddies"] .md-typeset .md-button {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: 600;
   color: var(--sb-gold);
-  border-color: var(--sb-gold);
+  border: 1px solid var(--sb-gold);
+  border-radius: 999px;
+  padding: 0.55em 1.4em;
+  transition: transform .2s ease, background .2s ease, color .2s ease, box-shadow .2s ease;
 }
 [data-md-color-scheme="summerbuddies"] .md-typeset .md-button:hover {
-  background-color: var(--sb-gold);
-  color: var(--sb-navy-900);
+  background: var(--sb-gold);
+  color: var(--sb-navy-950);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px -10px rgba(232, 196, 90, 0.5);
+}
+[data-md-color-scheme="summerbuddies"] .md-typeset .md-button--primary {
+  background: linear-gradient(180deg, var(--sb-gold), var(--sb-gold-deep));
+  color: var(--sb-navy-950);
   border-color: var(--sb-gold);
+}
+
+/* ---------------------------------------------------------- *
+ * 7. HERO (homepage)
+ * ---------------------------------------------------------- */
+.sb-hero {
+  position: relative;
+  margin: -1.2rem -0.8rem 2.4rem;
+  padding: clamp(3rem, 8vw, 6rem) clamp(1.2rem, 5vw, 4rem);
+  border-radius: 22px;
+  overflow: hidden;
+  border: 1px solid var(--sb-line);
+  background:
+    linear-gradient(120deg, rgba(6, 12, 29, 0.92) 30%, rgba(6, 12, 29, 0.55) 70%, rgba(6, 12, 29, 0.9)),
+    var(--sb-hero-img, radial-gradient(circle at 70% 30%, #173063, #060c1d));
+  background-size: cover;
+  background-position: center;
+  box-shadow: var(--sb-shadow);
+}
+.sb-hero::after { /* gold hairline glow at the base */
+  content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px;
+  background: linear-gradient(90deg, transparent, var(--sb-gold), transparent);
+  opacity: .7;
+}
+.sb-hero__eyebrow {
+  text-transform: uppercase; letter-spacing: 0.32em; font-size: 0.7rem;
+  font-weight: 600; color: var(--sb-gold);
+  animation: sb-fade-up .6s ease both;
+}
+.sb-hero h1.sb-hero__title {
+  font-family: "Fraunces", serif; font-weight: 600;
+  font-size: clamp(2.6rem, 7vw, 4.6rem); line-height: 1.02;
+  color: #fff; margin: 0.25em 0 0.3em; border: none;
+  animation: sb-fade-up .6s ease .08s both;
+}
+.sb-hero__title .sb-amp { color: var(--sb-gold); font-style: italic; }
+.sb-hero p.sb-hero__lede {
+  max-width: 40ch; font-size: 1.12rem; color: var(--sb-ink-body); line-height: 1.6;
+  animation: sb-fade-up .6s ease .16s both;
+}
+.sb-hero__cta { display: flex; gap: 0.8rem; flex-wrap: wrap; margin-top: 1.6rem;
+  animation: sb-fade-up .6s ease .24s both; }
+
+@keyframes sb-fade-up { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+
+/* ---------------------------------------------------------- *
+ * 8. Section eyebrow heading
+ * ---------------------------------------------------------- */
+.sb-eyebrow {
+  text-transform: uppercase; letter-spacing: 0.28em; font-size: 0.68rem;
+  font-weight: 700; color: var(--sb-gold); margin: 2.6rem 0 0.2rem;
+}
+.md-typeset .sb-section-title {
+  font-family: "Fraunces", serif; font-weight: 600; color: #fff;
+  font-size: 1.7rem; margin: 0.1rem 0 0.6rem; border: none; padding: 0;
+}
+.sb-foot { text-align: center; color: var(--sb-ink-dim); font-size: 0.8rem; line-height: 1.6; margin: 1rem 0 2rem; }
+
+/* ---------------------------------------------------------- *
+ * 9. Feature cards (start-here / custom features)
+ * ---------------------------------------------------------- */
+.sb-cards {
+  display: grid; gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  margin: 1.2rem 0 2rem;
+}
+.sb-card {
+  display: flex; flex-direction: column; gap: 0.5rem;
+  padding: 1.4rem; border-radius: 16px;
+  background: linear-gradient(180deg, rgba(16, 32, 70, 0.6), rgba(8, 17, 39, 0.6));
+  border: 1px solid var(--sb-line-soft);
+  color: var(--sb-ink-body);
+  transition: transform .25s cubic-bezier(.2,.7,.2,1), border-color .25s ease, box-shadow .25s ease;
+}
+.sb-card:hover { transform: translateY(-4px); border-color: var(--sb-line); box-shadow: var(--sb-shadow-hover); }
+.sb-card .sb-card__icon { font-size: 1.6rem; }
+.sb-card h3 { margin: 0; color: #fff; font-family: "Fraunces", serif; }
+a.sb-card { text-decoration: none; }
+a.sb-card h3 { transition: color .2s ease; }
+a.sb-card:hover h3 { color: var(--sb-gold); }
+
+/* ---------------------------------------------------------- *
+ * 10. MOD CARDS (image-forward, link cards)
+ * ---------------------------------------------------------- */
+.mod-grid {
+  display: grid; gap: 1.1rem;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  margin: 1.4rem 0 2.4rem;
+}
+.mod-card {
+  display: flex; flex-direction: column;
+  border-radius: 16px; overflow: hidden; text-decoration: none;
+  background: linear-gradient(180deg, rgba(16, 32, 70, 0.55), rgba(8, 17, 39, 0.7));
+  border: 1px solid var(--sb-line-soft);
+  box-shadow: var(--sb-shadow);
+  transition: transform .28s cubic-bezier(.2,.7,.2,1), border-color .28s ease, box-shadow .28s ease;
+  position: relative;
+}
+.mod-card:hover { transform: translateY(-6px); border-color: var(--sb-gold); box-shadow: var(--sb-shadow-hover); }
+
+.mod-card__media {
+  position: relative; aspect-ratio: 16 / 9; overflow: hidden;
+  background: radial-gradient(circle at 50% 40%, var(--sb-navy-600), var(--sb-navy-900));
+  display: flex; align-items: center; justify-content: center;
+}
+.mod-card__media img {
+  width: 100%; height: 100%; object-fit: cover;
+  transition: transform .5s cubic-bezier(.2,.7,.2,1);
+}
+.mod-card:hover .mod-card__media img { transform: scale(1.07); }
+/* icon-only mods: render the square icon centered, not stretched */
+.mod-card__media.is-icon img { width: 56%; height: auto; object-fit: contain; border-radius: 14px;
+  box-shadow: 0 10px 24px -12px rgba(0,0,0,.8); }
+/* placeholder badge for mods without art */
+.mod-card__media.is-empty { font-family: "Fraunces", serif; font-size: 2.4rem; color: var(--sb-gold); }
+.mod-card__media::after { /* gradient floor for legibility */
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(8, 17, 39, 0.85));
+}
+.mod-card__tier {
+  position: absolute; top: 0.6rem; left: 0.6rem; z-index: 2;
+  font-size: 0.64rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase;
+  color: var(--sb-navy-950); background: var(--sb-gold);
+  padding: 0.18em 0.6em; border-radius: 999px;
+}
+.mod-card__body { padding: 0.85rem 1rem 1.05rem; display: flex; flex-direction: column; gap: 0.3rem; flex: 1; }
+.mod-card__h {
+  margin: 0; font-family: "Fraunces", serif; font-size: 1.12rem; font-weight: 600; color: #fff;
+  transition: color .2s ease;
+}
+.mod-card:hover .mod-card__h { color: var(--sb-gold); }
+.mod-card__p { margin: 0; font-size: 0.86rem; color: var(--sb-ink-body); line-height: 1.45; }
+.mod-card__link {
+  margin-top: auto; padding-top: 0.6rem; font-size: 0.74rem; font-weight: 600;
+  color: var(--sb-ink-dim); display: inline-flex; align-items: center; gap: 0.3rem;
+  transition: color .2s ease;
+}
+.mod-card:hover .mod-card__link { color: var(--sb-gold); }
+
+/* ---------------------------------------------------------- *
+ * 11. Page banner strip (tier / custom page tops)
+ * ---------------------------------------------------------- */
+.sb-banner {
+  position: relative; margin: 0 0 1.8rem; border-radius: 18px; overflow: hidden;
+  min-height: 200px; display: flex; align-items: flex-end;
+  border: 1px solid var(--sb-line);
+  background-size: cover; background-position: center;
+  box-shadow: var(--sb-shadow);
+}
+.sb-banner::before {
+  content: ""; position: absolute; inset: 0;
+  background: linear-gradient(180deg, rgba(6,12,29,.2) 20%, rgba(6,12,29,.92));
+}
+.sb-banner__inner { position: relative; z-index: 1; padding: 1.4rem 1.6rem; }
+.sb-banner__inner .sb-eyebrow { margin: 0 0 0.2rem; }
+.sb-banner__inner h1 { margin: 0; border: none; }
+
+/* ---------------------------------------------------------- *
+ * 12. Misc polish
+ * ---------------------------------------------------------- */
+[data-md-color-scheme="summerbuddies"] .md-search__input { background: rgba(255,255,255,0.07); border-radius: 10px; }
+[data-md-color-scheme="summerbuddies"] .md-search__input::placeholder { color: var(--sb-ink-dim); }
+[data-md-color-scheme="summerbuddies"] ::selection { background: var(--sb-gold-soft); color: #fff; }
+[data-md-color-scheme="summerbuddies"] .md-footer-meta { background: var(--sb-navy-950); }
+/* slim gold scrollbar */
+[data-md-color-scheme="summerbuddies"] * { scrollbar-color: var(--sb-gold-deep) transparent; }
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
 }

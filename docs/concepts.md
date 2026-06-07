@@ -1,4 +1,9 @@
-# Concepts explained
+<div class="sb-banner" style="background-image:linear-gradient(125deg,#1a2a6b 0%,#0a1330 55%,#0a1736 100%)">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">The basics</p>
+    <h1>Concepts explained</h1>
+  </div>
+</div>
 
 A plain-language glossary of the things you'll run into in summerBuddies. No jargon — just "what
 is this and why do I care?"
@@ -45,7 +50,7 @@ your **exact** in-game name. See [Server info](server-info.md).
 
 Stone blocks you **activate** by clicking them. Once activated, a waystone joins your travel list
 so you can teleport between any waystones you've discovered. They spawn in villages and out in the
-world, which makes the huge modded map manageable. *(Mod: [Waystones](mods/early-game.md#waystones).)*
+world, which makes the huge modded map manageable. *(Mod: [Waystones](mods/early-game.md).)*
 
 ### Curios (extra equipment slots)
 

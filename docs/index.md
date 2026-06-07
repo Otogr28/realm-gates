@@ -1,51 +1,89 @@
-# Welcome to summerBuddies
-
-**summerBuddies** is a cooperative Minecraft modpack for **Forge 1.20.1**, built for playing
-with friends. It mixes new biomes, dragons, cave worlds, a full combat overhaul, and a few
-**custom mods made just for this server** — including real-time **voice & chat translation** so
-people who speak different languages can play together.
-
-This wiki is your friendly guide to the pack: how to install it, what each mod does (in plain
-language), and the custom features you won't find anywhere else.
-
+---
+hide:
+  - navigation
+  - toc
 ---
 
-## New here? Start with these
+<style>:root { --sb-hero-img: url('assets/mods/biomes-weve-gone-banner.webp'); }</style>
 
-<div class="grid cards" markdown>
-
-- :material-download: **[Install the modpack](getting-started/install.md)**
-  Get the mods into your launcher in a few minutes.
-
-- :material-microphone: **[Voice & chat translation](getting-started/voice-and-chat.md)**
-  Set your language and microphone for the QSMP-style translator.
-
-- :material-book-open-variant: **[Concepts explained](concepts.md)**
-  Short, plain-language answers to "wait, what is this?"
-
-- :material-package-variant: **[The mods](mods/index.md)**
-  Everything in the pack, grouped by when it matters in your playthrough.
-
+<div class="sb-hero">
+  <p class="sb-hero__eyebrow">Forge 1.20.1 · cooperative modpack</p>
+  <h1 class="sb-hero__title">summer<span class="sb-amp">Buddies</span></h1>
+  <p class="sb-hero__lede">A cozy survival-adventure pack for playing with friends — new worlds, dragons, ships, real-time <strong>voice &amp; chat translation</strong>, and a few mods built just for this server.</p>
+  <div class="sb-hero__cta">
+    <a class="md-button md-button--primary" href="getting-started/install/">Get started</a>
+    <a class="md-button" href="mods/">Explore the mods</a>
+  </div>
 </div>
 
----
+<p class="sb-eyebrow">Start here</p>
 
-## What makes this pack special
+<div class="sb-cards">
+  <a class="sb-card" href="getting-started/install/">
+    <span class="sb-card__icon">⬇️</span>
+    <h3>Install</h3>
+    <span>Get the modpack into your launcher in a few minutes.</span>
+  </a>
+  <a class="sb-card" href="getting-started/voice-and-chat/">
+    <span class="sb-card__icon">🎙️</span>
+    <h3>Voice &amp; translation</h3>
+    <span>Set your language and mic for the QSMP-style translator.</span>
+  </a>
+  <a class="sb-card" href="concepts/">
+    <span class="sb-card__icon">📖</span>
+    <h3>Concepts</h3>
+    <span>Plain-language answers to "wait, what is this?"</span>
+  </a>
+  <a class="sb-card" href="mods/">
+    <span class="sb-card__icon">🧩</span>
+    <h3>The mods</h3>
+    <span>Everything in the pack, grouped by when it matters.</span>
+  </a>
+</div>
 
-- **Voice Translate** — floating subtitles above a speaker's head, translated into *your*
-  language. Text chat is translated too. No API key needed; the server does the work.
-- **Realm Gates** — a custom system that controls travel between dimensions and unlocks them as
-  you progress.
-- **Custom Companions** — buildable companions that fight alongside you.
-- A big world: **50+ new biomes**, **Alex's Caves** underground worlds, **dragons** and mythical
-  beasts, navigable **ships**, and a complete **action-combat** system.
+<p class="sb-eyebrow">Made for this server</p>
+<h2 class="sb-section-title">Custom features you won't find elsewhere</h2>
 
-!!! tip "How to read this wiki"
-    The **mods** are grouped by a 0–10 *progression* ranking — roughly *when* in your game each
-    one starts to matter, from "useful on day one" to "endgame". It's not a quality score; a
-    rank-0 map mod is just as important as a rank-9 dragon.
+<div class="sb-cards">
+  <a class="sb-card" href="custom/voice-translate/">
+    <span class="sb-card__icon">🗣️</span>
+    <h3>Voice Translate</h3>
+    <span>Floating subtitles above a speaker's head, translated into <em>your</em> language. Text chat too. No API key needed.</span>
+  </a>
+  <a class="sb-card" href="custom/realmgates/">
+    <span class="sb-card__icon">🌀</span>
+    <h3>Realm Gates</h3>
+    <span>A custom system that controls travel between dimensions and unlocks them as you progress.</span>
+  </a>
+  <a class="sb-card" href="custom/custom-companions/">
+    <span class="sb-card__icon">🐾</span>
+    <h3>Custom Companions</h3>
+    <span>Build a personal companion that fights with you, levels up, and grows into your own build.</span>
+  </a>
+</div>
 
----
+<p class="sb-eyebrow">A taste of what's inside</p>
+<h2 class="sb-section-title">Big worlds, bigger fights</h2>
 
-*You'll need **Minecraft: Java Edition** with a **Forge 1.20.1** instance, and the server address
-— ask the admin for it.*
+<div class="mod-grid">
+  <a class="mod-card" href="https://modrinth.com/mod/ice-and-fire-dragons" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Endgame</span><img src="assets/mods/ice-and-fire-banner.webp" alt="Ice and Fire" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Ice &amp; Fire</span><span class="mod-card__p">Tame dragons and fight mythical beasts for the strongest gear in the pack.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <a class="mod-card" href="https://modrinth.com/mod/alexs-caves" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Mid game</span><img src="assets/mods/alexs-caves-banner.webp" alt="Alex's Caves" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Alex's Caves</span><span class="mod-card__p">Six exotic underground worlds, each its own ecosystem.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <a class="mod-card" href="https://modrinth.com/mod/oh-the-biomes-weve-gone" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Early game</span><img src="assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">50+ new biomes</span><span class="mod-card__p">A world full of new forests, wood, crops and scenery.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <a class="mod-card" href="https://modrinth.com/mod/smallships" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Mid game</span><img src="assets/mods/small-ships-banner.jpeg" alt="Small Ships" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Small Ships</span><span class="mod-card__p">Sail real navigable boats and ships across the sea.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+</div>
+
+<p style="margin:1.5rem 0 3rem;"><a class="md-button" href="mods/">See the full mod list</a></p>
+
+<p class="sb-foot">You'll need <strong>Minecraft: Java Edition</strong> with a <strong>Forge 1.20.1</strong> instance, and the server address — ask the admin.<br>Mod artwork © their respective authors, via Modrinth.</p>

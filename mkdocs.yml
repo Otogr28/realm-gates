@@ -10,12 +10,14 @@ theme:
   palette:
     - scheme: summerbuddies
   font:
-    text: Inter
+    text: Hanken Grotesk
     code: JetBrains Mono
   icon:
     logo: material/compass-rose
     repo: fontawesome/brands/github
   features:
+    - navigation.tabs
+    - navigation.tabs.sticky
     - navigation.sections
     - navigation.indexes
     - navigation.top

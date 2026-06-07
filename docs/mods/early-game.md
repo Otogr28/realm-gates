@@ -1,68 +1,68 @@
-# Early game — *rank 1–3*
+---
+hide:
+  - toc
+---
 
-Mods that start shaping your game in the first hours: how combat feels, getting around, and the
-first new things you'll see while exploring.
+<div class="sb-banner" style="background-image:url('/assets/mods/biomes-weve-gone-banner.webp')">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Rank 1–3 · your first hours</p>
+    <h1>Early game</h1>
+  </div>
+</div>
 
-## Combat & survival
+How combat feels, getting around, and the first new things you'll see while exploring.
 
-### Epic Fight — *rank 1*
-A complete **combat overhaul** with action-style animations, **weapon-specific movesets**, combos,
-dodging, blocking/parrying, and a skill tree. It affects the game from your very first wooden
-sword.
+<p class="sb-eyebrow">Combat &amp; survival</p>
 
-- Press the **battle-mode key** (default **`R`**) to switch between classic control and action mode.
-- Each weapon **type** (sword, greatsword, spear, dagger, axe, fist…) has its own combo and a
-  special "innate" skill that uses **stamina**.
-- It doesn't set fixed damage numbers — it redistributes your weapon's damage across a combo and
-  adds armor-piercing/stagger. Better gear and enchants still drive your damage.
-- Even zombies and skeletons get their own movesets, so fights feel different.
+<div class="mod-grid">
+  <a class="mod-card" href="https://modrinth.com/mod/epic-fight" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Rank 1</span><img src="/assets/mods/epic-fight-banner.webp" alt="Epic Fight" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Epic Fight</span><span class="mod-card__p">A full action-combat overhaul: weapon movesets, combos, dodging and parrying. Press <strong>R</strong> for battle mode.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <span class="mod-card">
+    <span class="mod-card__media is-empty">⚰️</span>
+    <span class="mod-card__body"><span class="mod-card__h">Corail Tombstone</span><span class="mod-card__p">Die and your items wait safely in a grave — plus an optional soul-magic progression.</span></span>
+  </span>
+  <a class="mod-card" href="https://modrinth.com/mod/creeper-overhaul" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Rank 2</span><img src="/assets/mods/creeper-overhaul-banner.webp" alt="Creeper Overhaul" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Creeper Overhaul</span><span class="mod-card__p">Biome-specific creeper designs and behavior. Mostly atmospheric.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <a class="mod-card" href="https://modrinth.com/mod/zombie-awareness" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Rank 3</span><img src="/assets/mods/zombie-awareness-banner.webp" alt="Zombie Awareness" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Zombie Awareness</span><span class="mod-card__p">Smarter, scarier mobs that notice light, sound and your scent.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+</div>
 
-!!! info "Everyone needs it"
-    Epic Fight must be installed on every client (it's already in the pack) — combat is synced, so
-    you can't really play without it.
+!!! info "Everyone needs Epic Fight"
+    Combat is synced, so every client needs it (it's already in the pack). Even zombies and
+    skeletons get their own movesets — fights feel different.
 
-### Corail Tombstone — *rank 2*
-When you die, your items go into a **grave** instead of scattering — no more frantic item recovery.
-It also has an **optional magic progression** (soul-powered perks and enchantments) if you want to
-dig deeper.
+<p class="sb-eyebrow">Getting around &amp; hauling</p>
 
-### Zombie Awareness — *rank 3*
-Smarter, scarier monster AI: mobs can **notice light, sound, and your scent** and track you down.
-It makes the night feel more dangerous.
+<div class="mod-grid">
+  <a class="mod-card" href="https://modrinth.com/mod/waystones" target="_blank" rel="noopener">
+    <span class="mod-card__media is-icon"><span class="mod-card__tier">Rank 3</span><img src="/assets/mods/waystones.webp" alt="Waystones" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Waystones</span><span class="mod-card__p">Fast travel. Activate a waystone and teleport between any you've discovered. Found in villages and the wild.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <a class="mod-card" href="https://modrinth.com/mod/carry-on" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Rank 2</span><img src="/assets/mods/carry-on-banner.webp" alt="Carry On" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Carry On</span><span class="mod-card__p">Pick up and carry chests (with contents) and even mobs, then set them down elsewhere.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+</div>
 
-### Creeper Overhaul — *rank 2*
-Gives creepers **biome-specific designs and behavior** — they look and act like they belong to
-where they spawn. Mostly atmospheric.
+<p class="sb-eyebrow">New world content</p>
 
-## Getting around & hauling
+<div class="mod-grid">
+  <a class="mod-card" href="https://modrinth.com/mod/oh-the-biomes-weve-gone" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Rank 3</span><img src="/assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Oh The Biomes We've Gone</span><span class="mod-card__p">50+ new biomes with ~25 wood types, crops, fruit and building blocks. The world's variety.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+  <a class="mod-card" href="https://modrinth.com/mod/vanillabackport" target="_blank" rel="noopener">
+    <span class="mod-card__media"><span class="mod-card__tier">Rank 3</span><img src="/assets/mods/vanilla-backport-banner.webp" alt="Vanilla Backport" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">Vanilla Backport</span><span class="mod-card__p">Brings features from newer Minecraft versions back into 1.20.1.</span><span class="mod-card__link">Mod page ↗</span></span>
+  </a>
+</div>
 
-### Waystones — *rank 3* {#waystones}
-**Fast travel.** Activate a waystone block (you'll find them in villages and the wild) and it joins
-your travel list, letting you teleport between discovered waystones. There are also portable items:
-
-- **Warp Stone** — reusable teleport (short cooldown).
-- **Warp / Bound Scroll** — teleport to a chosen waystone.
-- **Return Scroll** — teleport to your "home" waystone.
-- **Sharestone** — teleport to other players.
-
-This is what makes the huge modded map (with [Oh The Biomes We've Gone](#oh-the-biomes-weve-gone))
-actually traversable.
-
-### Carry On — *rank 2*
-**Pick up and carry** blocks (like chests with their contents) and even mobs, then place them down
-elsewhere. Great for moving your base or relocating villagers.
-
-## New world content
-
-### Oh The Biomes We've Gone — *rank 3* {#oh-the-biomes-weve-gone}
-Adds **50+ new biomes** to the Overworld — forests, savannas, badlands, wetlands, snowy and even
-fantasy biomes — with **~25 new wood types**, flowers, crops, fruits, and building blocks. It's the
-mod that gives the world its variety. A few new critters live here too (like the floating, venomous
-**Man O' War** jellyfish and the shy **Pumpkin Warden**).
-
-!!! tip "Existing worlds"
-    New biomes only appear in **unexplored chunks**. Travel somewhere new (a waystone helps) to find them.
-
-### VanillaBackport — *rank 3*
-Brings **features from newer Minecraft versions** back into 1.20.1, so the pack feels a bit more
-modern without changing the version.
+!!! tip "New biomes only appear in unexplored land"
+    On an existing world, travel somewhere new (a [waystone](https://modrinth.com/mod/waystones)
+    helps) to find the new biomes — they generate in fresh chunks.

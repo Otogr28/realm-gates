@@ -1,4 +1,9 @@
-# Voice & chat translation
+<div class="sb-banner" style="background-image:url('/assets/mods/simple-voice-chat-banner.webp')">
+  <div class="sb-banner__inner">
+    <p class="sb-eyebrow">Getting started</p>
+    <h1>Voice &amp; chat translation</h1>
+  </div>
+</div>
 
 This server runs **Voice Translate** (`voicetrans`), a real-time translator inspired by QSMP. It
 shows **floating subtitles above a speaker's head** plus a chat-style transcript, each translated
