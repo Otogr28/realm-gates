@@ -4,6 +4,9 @@ Player-facing documentation for the **summerBuddies** Minecraft modpack (Forge 1
 [MkDocs Material](https://squidfunk.github.io/mkdocs-material/). Navy + gold theme. Static site —
 no database, no login panel, minimal attack surface.
 
+🌐 **Live:** <https://otogr28.github.io/summerBuddies-wiki/> — hosted free on **GitHub Pages**.
+Every push to `master` rebuilds and redeploys automatically (`.github/workflows/deploy.yml`).
+
 > ⚠️ **This site is (will be) public. Never put server secrets here** — no IPs, no admin/infra
 > details, no tokens. Player-facing content only. Those secrets live elsewhere and stay there.
 
@@ -51,9 +54,17 @@ deploy/                    # ready-to-use VPS hosting (Caddy + Cloudflare) — s
 - **Keep a page fully private:** just don't add it to the build / nav. Unlinked ≠ secure, but
   *unbuilt* never reaches the public site.
 
-## Deploying (later)
+## Deploying
 
-Hosting is designed for the VPS behind **Cloudflare (free plan)**: Caddy serves the static files,
-port 443 is firewalled to Cloudflare IPs only, and Cloudflare provides DDoS protection + WAF + TLS.
-See [`deploy/README.md`](deploy/README.md) for the full, copy-pasteable setup. Nothing in `deploy/`
-runs until you choose to set it up.
+**GitHub Pages (current).** A push to `master` triggers `.github/workflows/deploy.yml`, which runs
+`mkdocs build --strict` and publishes to Pages. To update the site: edit Markdown, commit, push.
+That's it.
+
+> ⚠️ **No password-gating on GitHub Pages.** Pages is static hosting with no server-side auth, so
+> the `docs/private/` section **cannot** be protected there — it is excluded from the published
+> build (`exclude_docs` in `mkdocs.yml`). To keep something private, just don't publish it. If you
+> ever need real per-section passwords, use the self-hosted option below.
+
+**VPS + Cloudflare (optional self-host).** A ready alternative behind **Cloudflare (free plan)**:
+Caddy serves the files with `basic_auth` on `/private/`, port 443 firewalled to Cloudflare IPs, plus
+DDoS/WAF/TLS. See [`deploy/README.md`](deploy/README.md). Nothing in `deploy/` runs unless you set it up.
