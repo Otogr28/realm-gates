@@ -25,7 +25,7 @@ creatures and structures.
     <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="../../assets/mods/biomes-weve-gone-banner.webp" alt="Oh The Biomes We've Gone" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Oh The Biomes We've Gone</span><span class="mod-card__p">50+ new biomes with ~25 wood types, crops, fruit and building blocks.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
-  <a class="mod-card" href="https://modrinth.com/mod/smallships" target="_blank" rel="noopener">
+  <a class="mod-card" href="https://modrinth.com/mod/small-ships" target="_blank" rel="noopener">
     <span class="mod-card__media"><span class="mod-card__tier">Aincrad</span><img src="../../assets/mods/small-ships-banner.jpeg" alt="Small Ships" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Small Ships</span><span class="mod-card__p">Navigable boats and ships — some with cargo and cannons.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>

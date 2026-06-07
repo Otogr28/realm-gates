@@ -41,7 +41,7 @@ You won't find them listed on individual realm pages; they're always with you.
     <span class="mod-card__media is-icon"><span class="mod-card__tier mod-card__tier--all">All dimensions</span><img src="../../assets/mods/controlling.webp" alt="Controlling" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Controlling</span><span class="mod-card__p">Make the keybind menu searchable and fix conflicts.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
-  <a class="mod-card" href="https://modrinth.com/mod/just-enough-breeding" target="_blank" rel="noopener">
+  <a class="mod-card" href="https://modrinth.com/mod/justenoughbreeding" target="_blank" rel="noopener">
     <span class="mod-card__media"><span class="mod-card__tier mod-card__tier--all">All dimensions</span><img src="../../assets/mods/just-enough-breeding-banner.webp" alt="Just Enough Breeding" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Just Enough Breeding</span><span class="mod-card__p">Shows how to breed each animal, inside JEI.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
@@ -87,7 +87,7 @@ You won't find them listed on individual realm pages; they're always with you.
     <span class="mod-card__media"><span class="mod-card__tier mod-card__tier--all">All dimensions</span><img src="../../assets/mods/carry-on-banner.webp" alt="Carry On" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Carry On</span><span class="mod-card__p">Pick up and carry chests (with contents) and even mobs.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
-  <a class="mod-card" href="https://modrinth.com/mod/travelers-backpack" target="_blank" rel="noopener">
+  <a class="mod-card" href="https://modrinth.com/mod/travelersbackpack" target="_blank" rel="noopener">
     <span class="mod-card__media"><span class="mod-card__tier mod-card__tier--all">All dimensions</span><img src="../../assets/mods/travelers-backpack-banner.webp" alt="Traveler's Backpack" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Traveler's Backpack</span><span class="mod-card__p">Big wearable backpacks with crafting, fluid tanks and perks.</span><span class="mod-card__link">Mod page ↗</span></span>
   </a>
