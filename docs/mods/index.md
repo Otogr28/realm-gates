@@ -18,6 +18,10 @@ Each mod is tagged by where it lives: a specific **Dimension**, or **All dimensi
 universal mods (UI, performance, combat, social) that follow you everywhere.
 
 <div class="mod-grid">
+  <a class="mod-card" href="all-dimensions/">
+    <span class="mod-card__media"><span class="mod-card__tier mod-card__tier--all">All dimensions</span><img src="../assets/mods/jade-banner.png" alt="All dimensions" loading="lazy"></span>
+    <span class="mod-card__body"><span class="mod-card__h">All dimensions</span><span class="mod-card__p">The universal mods — UI, performance, combat, travel, magic — that follow you into every realm.</span><span class="mod-card__link">Open ↗</span></span>
+  </a>
   <a class="mod-card" href="dimension-1/">
     <span class="mod-card__media"><span class="mod-card__tier">Dimension 1</span><img src="../assets/mods/biomes-weve-gone-banner.webp" alt="Dimension 1" loading="lazy"></span>
     <span class="mod-card__body"><span class="mod-card__h">Dimension 1 — The Overworld</span><span class="mod-card__p">Your home realm: a familiar overworld where all of the pack's current content lives.</span><span class="mod-card__link">Open ↗</span></span>

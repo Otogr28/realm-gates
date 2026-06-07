@@ -201,9 +201,13 @@
 }
 .sb-hero::before { /* atmospheric, softly-blurred artwork behind the title */
   content: ""; position: absolute; inset: -8%; z-index: 0;
+  /* Path is relative to THIS stylesheet (/…/stylesheets/) so it resolves the same in
+     every browser — unlike a relative url() stored in a custom property, which Firefox
+     does not resolve. */
   background:
     linear-gradient(100deg, rgba(7,12,29,0.88) 0%, rgba(7,12,29,0.58) 44%, rgba(7,12,29,0.3) 74%, rgba(7,12,29,0.5) 100%),
-    var(--sb-hero-img, radial-gradient(circle at 70% 30%, #173063, #060c1d)) center/cover no-repeat;
+    url("../assets/mods/biomes-weve-gone-banner.webp") center/cover no-repeat,
+    radial-gradient(circle at 70% 30%, #173063, #060c1d);
   filter: blur(3px) saturate(1.12);
 }
 .sb-hero > * { position: relative; z-index: 1; }

@@ -4,8 +4,6 @@ hide:
   - toc
 ---
 
-<style>:root { --sb-hero-img: url('assets/mods/biomes-weve-gone-banner.webp'); }</style>
-
 <div class="sb-hero">
   <p class="sb-hero__eyebrow">Forge 1.20.1 · cooperative modpack</p>
   <h1 class="sb-hero__title">Realm <span class="sb-amp">Gates</span></h1>
