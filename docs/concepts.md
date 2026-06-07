@@ -29,11 +29,14 @@ settings, just *what it is and why it matters*.
         <h2 class="sb-codex__title">The Corruption</h2>
         <span class="sb-codex__cat sb-codex__cat--danger">World</span>
       </div>
-      <p>Something is <strong>unmaking the dimensions</strong>. Realms fracture, flicker and go dark at the edges — a
-spreading digital rot that swallows whole worlds. <strong>Realm Gates</strong> is the effort to push back: to
-reach each realm, hold it stable, and reopen it for players.</p>
-      <p>That's why only <strong>Aincrad</strong> (Dimension 1) stands fully open today. The others are still <strong>sealed or
-corrupted</strong> — you'll see them listed as <em>coming soon</em> until they're reclaimed.</p>
+      <p>In the spaces between worlds, something is <strong>unmaking the dimensions</strong>. It does not burn or
+break them; it <strong>unwrites</strong> them, line by line, until the color drains and the edges flicker and
+the world simply stops being. A spreading <strong>digital rot</strong>, and it has already swallowed realms whole.
+<strong>Realm Gates</strong> is the answer raised against it: to reach each dying world, hold it steady, and pry
+its door back open.</p>
+      <p>So far the rot has been turned back from only one. <strong>Aincrad</strong>, Dimension 1, stands open and whole.
+The rest remain <strong>sealed or corrupted</strong>, waiting in the dark behind their gates — <em>not yet come</em>,
+until someone reaches them and reclaims them from the Corruption.</p>
     </div>
   </article>
 
