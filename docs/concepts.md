@@ -31,11 +31,7 @@ settings, just *what it is and why it matters*.
       </div>
       <p>In the spaces between worlds, something is <strong>unmaking the dimensions</strong>. It <strong>unwrites</strong>
 them, line by line: the color drains away, the edges flicker, and the world simply stops being. A spreading
-<strong>digital rot</strong> that has already swallowed realms whole. <strong>Realm Gates</strong> is the answer
-raised against it — to reach each dying world, hold it steady, and pry its door back open.</p>
-      <p>So far the rot has been turned back from only one. <strong>Aincrad</strong>, Dimension 1, stands open and whole.
-The rest remain <strong>sealed or blighted</strong>, waiting in the dark behind their gates — <em>not yet come</em>,
-until someone reaches them and reclaims them from the Blight.</p>
+<strong>digital rot</strong> that has already swallowed realms whole.</p>
     </div>
   </article>
 
