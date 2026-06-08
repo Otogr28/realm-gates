@@ -29,11 +29,10 @@ settings, just *what it is and why it matters*.
         <h2 class="sb-codex__title">The Blight</h2>
         <span class="sb-codex__cat sb-codex__cat--danger">World</span>
       </div>
-      <p>In the spaces between worlds, something is <strong>unmaking the dimensions</strong>. It does not burn or
-break them; it <strong>unwrites</strong> them, line by line, until the color drains and the edges flicker and
-the world simply stops being. A spreading <strong>digital rot</strong>, and it has already swallowed realms whole.
-<strong>Realm Gates</strong> is the answer raised against it: to reach each dying world, hold it steady, and pry
-its door back open.</p>
+      <p>In the spaces between worlds, something is <strong>unmaking the dimensions</strong>. It <strong>unwrites</strong>
+them, line by line: the color drains away, the edges flicker, and the world simply stops being. A spreading
+<strong>digital rot</strong> that has already swallowed realms whole. <strong>Realm Gates</strong> is the answer
+raised against it — to reach each dying world, hold it steady, and pry its door back open.</p>
       <p>So far the rot has been turned back from only one. <strong>Aincrad</strong>, Dimension 1, stands open and whole.
 The rest remain <strong>sealed or blighted</strong>, waiting in the dark behind their gates — <em>not yet come</em>,
 until someone reaches them and reclaims them from the Blight.</p>
@@ -100,7 +99,7 @@ like a slog.</p>
 
   <article class="sb-codex__entry">
     <div class="sb-codex__media">
-      <img src="../assets/mods/epic-fight-banner.webp" alt="A companion fighting at your side" loading="lazy">
+      <img src="../assets/mods/companions-banner.webp" alt="A companion fighting at your side" loading="lazy">
     </div>
     <div class="sb-codex__body">
       <div class="sb-codex__head">
