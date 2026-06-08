@@ -79,6 +79,11 @@ groups:
         href: zombie-awareness
         img: assets/mods/zombie-awareness-banner.webp
         desc: "Smarter, scarier mobs that hunt you by light, sound and your scent."
+      - name: P.E.K.K.A. Craft
+        href: pekka-craft
+        img: assets/mods/pekka-craft-banner.webp
+        # dimension: ~   (unassigned — not pinned to a realm yet)
+        desc: "Craft and tame two Clash Royale knight companions, then power them up."
 
   structures:
     title: Structures
@@ -142,6 +147,18 @@ groups:
         img: assets/mods/highlighter-banner.webp
         dimension: all
         desc: "Subtly outlines the block you're looking at."
+      - name: WorldEdit
+        href: worldedit
+        img: assets/mods/worldedit.webp
+        media: icon
+        # dimension: ~   (unassigned — not pinned to a realm yet)
+        desc: "In-game map editor: select regions and reshape the world from chat. Admin/build tool."
+      - name: Forgematica
+        href: forgematica
+        emoji: "📐"
+        media: empty
+        # dimension: ~   (unassigned — not pinned to a realm yet)
+        desc: "Litematica for Forge: ghost-block blueprints to build by copying. Client-side only."
 
   performance:
     title: Performance
@@ -200,6 +217,11 @@ groups:
         media: icon
         dimension: all
         desc: "Pick villagers up and manage trades easily."
+      - name: More Bows and Arrows
+        href: more-bows
+        img: assets/mods/more-bows-banner.webp
+        # dimension: ~   (unassigned — not pinned to a realm yet)
+        desc: "39 craftable bows and 22 special arrows — explode, teleport, call down lightning."
 
   magic:
     title: Magic, decor & social
@@ -257,6 +279,12 @@ groups:
         media: icon
         dimension: all
         desc: "Screen effects — like a fire/blood overlay when you're hurt."
+      - name: Supplementaries Squared
+        href: supplementaries-squared
+        img: assets/mods/supplementaries-squared.webp
+        media: icon
+        # dimension: ~   (unassigned — not pinned to a realm yet)
+        desc: "Supplementaries add-on: colored sacks, candle holders, plaques and a unique master key."
 
 # --- Curated set for the HOME page teaser (external links) --
 #  These reference mods by their group/name but point to Modrinth.
