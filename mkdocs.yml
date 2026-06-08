@@ -40,6 +40,11 @@ theme:
 extra_css:
   - stylesheets/realm-gates.css
 
+extra_javascript:
+  # Live search + faceted filtering for the Mods catalogue (mods/browse.md).
+  # Vanilla JS, re-binds on Material's instant-loading navigation.
+  - javascripts/mods-filter.js
+
 markdown_extensions:
   - admonition
   - attr_list
@@ -79,6 +84,7 @@ extra:
 
 nav:
   - Home: index.md
+  - Mods: mods/browse.md
   - Dimensions:
       - Overview: mods/index.md
       - All mods: mods/all-dimensions.md

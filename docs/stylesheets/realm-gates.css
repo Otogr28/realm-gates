@@ -816,3 +816,155 @@ a.sb-card:hover h3 { color: var(--sb-gold); }
 .sb-ico-magic { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M15%204l5%205L9%2020l-5%201%201-5z%27%2F%3E%3Cpath%20d%3D%27M14%205l5%205%27%2F%3E%3Cpath%20d%3D%27M18%202l.6%201.4L20%204l-1.4.6L18%206l-.6-1.4L16%204l1.4-.6z%27%2F%3E%3C%2Fsvg%3E"); }
 .sb-ico-trinkets { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2712%27%20cy%3D%2715%27%20r%3D%275%27%2F%3E%3Cpath%20d%3D%27M9.5%2010.5L7%204h10l-2.5%206.5%27%2F%3E%3C%2Fsvg%3E"); }
 .sb-ico-dragon { background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.9%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Cpath%20d%3D%27M4%208l4-2%202%203%206-3%204%202-3%204%203%204-6-1-3%203-2-4-4-1z%27%2F%3E%3Ccircle%20cx%3D%2716%27%20cy%3D%279.5%27%20r%3D%27.7%27%20fill%3D%27%23e8c45a%27%20stroke%3D%27none%27%2F%3E%3C%2Fsvg%3E"); }
+
+/* ============================================================
+   16. MODS BROWSE PAGE — live search + faceted filter bar.
+       Pixel chrome (search affordance, chips, count) over the
+       existing .mod-grid. Reuses navy/gold tokens + slot bevel.
+       Added 2026-06-08.
+   ============================================================ */
+
+/* The whole control panel: search + two chip rows + count. */
+.sb-filter {
+  margin: 1.6rem 0 1.4rem;
+  padding: 1rem 1.05rem .95rem;
+  border: 2px solid var(--sb-line);
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(16,32,70,.5), rgba(8,17,39,.74));
+  box-shadow: var(--sb-shadow),
+              inset 1px 1px 0 rgba(255,255,255,.06),
+              inset -2px -2px 0 rgba(0,0,0,.45);
+  /* dithered top rule — same arcade-marquee motif as .sb-soon */
+  background-image:
+    repeating-linear-gradient(90deg, var(--sb-gold) 0 3px, transparent 3px 6px),
+    linear-gradient(180deg, rgba(16,32,70,.5), rgba(8,17,39,.74));
+  background-size: 100% 2px, 100% 100%;
+  background-repeat: no-repeat;
+  background-position: top left, center;
+}
+
+/* ---- Search field ---- */
+.sb-filter__search { position: relative; margin-bottom: .9rem; }
+/* visually-hidden but accessible label */
+.sb-filter__searchlabel {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+.sb-filter__searchicon {
+  position: absolute; left: .75rem; top: 50%; transform: translateY(-50%);
+  width: 18px; height: 18px; pointer-events: none; opacity: .8;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%272%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2711%27%20r%3D%277%27%2F%3E%3Cpath%20d%3D%27M21%2021l-4.3-4.3%27%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
+}
+.sb-filter__input {
+  width: 100%;
+  font-family: "Hanken Grotesk", system-ui, sans-serif;
+  font-size: .98rem; color: var(--sb-ink);
+  padding: .62rem .8rem .62rem 2.4rem;
+  background: rgba(6,12,29,.6);
+  border: 1px solid var(--sb-line-soft);
+  border-radius: 4px;
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,.35);
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+.sb-filter__input::placeholder { color: var(--sb-ink-dim); }
+.sb-filter__input:focus {
+  outline: none;
+  border-color: var(--sb-gold);
+  background: rgba(6,12,29,.78);
+  box-shadow: inset 1px 1px 0 rgba(0,0,0,.35), 0 0 0 2px var(--sb-gold-soft);
+}
+/* hide the native clear "x" in WebKit; we keep our own reset affordance */
+.sb-filter__input::-webkit-search-cancel-button { -webkit-appearance: none; }
+
+/* ---- Chip rows ---- */
+.sb-filter__row {
+  display: flex; flex-wrap: wrap; align-items: center; gap: .4rem;
+  margin-top: .55rem;
+}
+.sb-filter__legend {
+  font-family: var(--sb-font-pixel);
+  text-transform: uppercase; letter-spacing: .12em; font-size: .72rem;
+  font-weight: 600; color: var(--sb-ink-dim);
+  margin-right: .35rem; min-width: 4.6rem;
+}
+
+/* A single filter chip — pixel pill, navy default, gold when active. */
+.sb-chip {
+  appearance: none; cursor: pointer;
+  font-family: var(--sb-font-pixel);
+  font-size: .8rem; font-weight: 600; letter-spacing: .03em;
+  line-height: 1.2; color: var(--sb-ink-body);
+  background: rgba(8,17,39,.6);
+  border: 1px solid var(--sb-line-soft);
+  border-radius: 3px;
+  padding: .26em .7em;
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.05), inset -1px -1px 0 rgba(0,0,0,.4);
+  transition: transform .12s steps(2), color .15s ease,
+              background .15s ease, border-color .15s ease;
+}
+.sb-chip:hover {
+  color: var(--sb-ink); border-color: var(--sb-line);
+  transform: translateY(-1px);
+}
+.sb-chip:focus-visible {
+  outline: none; border-color: var(--sb-gold);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.05),
+              inset -1px -1px 0 rgba(0,0,0,.4),
+              0 0 0 2px var(--sb-gold-soft);
+}
+.sb-chip:active { transform: translateY(1px); }
+.sb-chip.is-active {
+  color: var(--sb-navy-950);
+  background: var(--sb-gold);
+  border-color: var(--sb-gold);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.35), inset -2px -2px 0 rgba(0,0,0,.22);
+}
+/* "All dimensions" tag chip echoes its outline-gold badge when active */
+.sb-chip--all.is-active {
+  color: var(--sb-gold);
+  background: rgba(8,17,39,.85);
+  border-color: var(--sb-gold);
+}
+/* "Unassigned" tag chip stays neutral/dashed even when active */
+.sb-chip--unassigned.is-active {
+  color: var(--sb-ink);
+  background: rgba(8,17,39,.85);
+  border: 1px dashed rgba(232,236,245,.4);
+  box-shadow: inset 1px 1px 0 rgba(255,255,255,.05);
+}
+
+/* ---- Live count line ---- */
+.sb-filter__count {
+  margin: .9rem 0 0; font-size: .82rem; color: var(--sb-ink-dim); line-height: 1.4;
+}
+.sb-filter__count strong {
+  font-family: var(--sb-font-pixel);
+  color: var(--sb-gold); font-weight: 600; font-size: .92rem;
+}
+
+/* ---- Empty state ---- */
+.sb-empty {
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+  gap: .55rem; margin: 1.4rem 0 2.4rem; padding: 2.6rem 1.4rem;
+  border: 2px dashed var(--sb-line);
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(16,32,70,.4), rgba(8,17,39,.62));
+}
+.sb-empty[hidden] { display: none; }
+.sb-empty__glyph {
+  width: 52px; height: 52px; opacity: .7;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20viewBox%3D%270%200%2024%2024%27%20fill%3D%27none%27%20stroke%3D%27%23e8c45a%27%20stroke-width%3D%271.8%27%20stroke-linecap%3D%27round%27%20stroke-linejoin%3D%27round%27%3E%3Ccircle%20cx%3D%2711%27%20cy%3D%2711%27%20r%3D%277%27%2F%3E%3Cpath%20d%3D%27M21%2021l-4.3-4.3%27%2F%3E%3Cpath%20d%3D%27M8%2011h6%27%2F%3E%3C%2Fsvg%3E") center / contain no-repeat;
+}
+.md-typeset .sb-empty__title {
+  font-family: var(--sb-font-pixel);
+  color: var(--sb-ink); font-weight: 600; font-size: 1.1rem; margin: 0;
+}
+.sb-empty__hint { margin: 0; color: var(--sb-ink-dim); font-size: .88rem; }
+.sb-empty__reset { margin-top: .5rem; }
+
+/* Cards hidden by the filter — belt & suspenders with the `hidden` attr. */
+.mod-card[hidden] { display: none !important; }
+
+@media (max-width: 540px) {
+  .sb-filter__legend { min-width: 100%; margin-bottom: .1rem; }
+}
